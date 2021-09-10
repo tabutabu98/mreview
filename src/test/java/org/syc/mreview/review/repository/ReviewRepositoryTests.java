@@ -7,6 +7,7 @@ import org.syc.mreview.member.entity.Member;
 import org.syc.mreview.movie.entity.Movie;
 import org.syc.mreview.review.entity.Review;
 
+import java.util.List;
 import java.util.stream.IntStream;
 
 // 신규 작성(366p)
@@ -39,6 +40,26 @@ public class ReviewRepositoryTests {
                     .build();
 
             reviewRepository.save(movieReview);
+        });
+
+    }
+
+    // 신규 작성(379p)
+    public void testGetMovieReviews() {
+
+        Movie movie = Movie.builder().mno(92L).build();
+
+        // ReviewRepository 인터페이스의 추상메소드(?)
+        List<Review> result = reviewRepository.findByMovie(movie);
+
+        result.forEach(movieReview -> {
+
+            System.out.println(movieReview.getReviewnum());
+            System.out.println("\t" + movieReview.getGrade());
+            System.out.println("\t" + movieReview.getText());
+            System.out.println("\t" + movieReview.getMember().getEmail());
+            System.out.println("----------------------------------");
+
         });
 
     }
