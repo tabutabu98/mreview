@@ -24,7 +24,13 @@
    * Do nothing -> Update classes and resources<br>![](pictures/2.jpg)<br>  
    * 둘다 변경 후 Apply 및 OK<br>![](pictures/3.jpg)<br>  
 ***  
-### 변경이력  
+
+### 메모  
+|날짜|내용|
+|:---:|:---|
+|2021-09-10|7챕터 끝내고 8챕터 388p까지 완료|
+
+### 변경이력(더이상 작성하지 않음, 커밋 참조)  
 |index|branch|commit|날짜|비고|
 |:---:|:----:|:-----|:---:|:---|
 |1|main|프로젝트 생성 @main|2021-09-10|프로젝트 첫 생성후 'build.gradle'에 타임리프 날짜 라이브러리 주입<br>application.properties의 파일형식 yml로 변경 및 마리아디비의 bootex디비 서버에 연결<br>백업을 제대로 해두자... 프로젝트 다시 생성하고 원격저장소도 2번이나 갈아 엎었음 |
