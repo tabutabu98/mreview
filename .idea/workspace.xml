@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" afterDir="false" />
-    </list>
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
-      <workItem from="1631240839998" duration="6729000" />
+      <workItem from="1631240839998" duration="7443000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -326,7 +323,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631249439354</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc">
+      <created>1631249835887</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1631249835887</updated>
+    </task>
+    <task id="LOCAL-00025" summary="업데이트 @syc">
+      <created>1631249846749</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1631249846749</updated>
+    </task>
+    <task id="LOCAL-00026" summary="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc">
+      <created>1631250420731</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1631250420731</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +382,9 @@
     <MESSAGE value="MovieRepository 인터페이스에 JPQL 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스에 JPQL 수정 @syc" />
     <MESSAGE value="MovieRepositoryTests testListPage() 추가 @syc" />
+    <MESSAGE value="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc" />
     <MESSAGE value="업데이트 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
+    <MESSAGE value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
   </component>
 </project>
