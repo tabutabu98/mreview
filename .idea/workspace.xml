@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -74,7 +74,7 @@
       <recent name="org.syc.mreview" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MreviewApplication">
+  <component name="RunManager" selected="JUnit.MovieRepositoryTests.testGetMovieWithAll">
     <configuration name="MemberRepositoryTests.insertMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -102,6 +102,22 @@
       <option name="PACKAGE_NAME" value="org.syc.mreview.movie.repository" />
       <option name="MAIN_CLASS_NAME" value="org.syc.mreview.movie.repository.MovieRepositoryTests" />
       <option name="METHOD_NAME" value="insertMovies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRepositoryTests.testGetMovieWithAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.movie.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.movie.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.movie.repository.MovieRepositoryTests" />
+      <option name="METHOD_NAME" value="testGetMovieWithAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,9 +172,11 @@
       <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
       <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
       <item itemvalue="Spring Boot.MreviewApplication" />
+      <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
         <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
         <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
         <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
@@ -176,7 +194,7 @@
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
-      <workItem from="1631250894589" duration="2985000" />
+      <workItem from="1631250894589" duration="5510000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -367,7 +385,35 @@
       <option name="project" value="LOCAL" />
       <updated>1631250595154</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="업데이트 @syc">
+      <created>1631253990078</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1631253990078</updated>
+    </task>
+    <task id="LOCAL-00029" summary="README.md 수정 @syc">
+      <created>1631254023218</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1631254023218</updated>
+    </task>
+    <task id="LOCAL-00030" summary="MovieRepository 인터페이스, 특정 영화 조회 처리 추가 @syc">
+      <created>1631254635032</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1631254635032</updated>
+    </task>
+    <task id="LOCAL-00031" summary="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc">
+      <created>1631256440916</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1631256440916</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +438,6 @@
     <MESSAGE value="프로젝트 생성 @main" />
     <MESSAGE value="프로젝트 생성_업데이트 @main" />
     <MESSAGE value="변경이력 테이블 업데이트 @syc" />
-    <MESSAGE value="README.md 수정 @syc" />
     <MESSAGE value="BaseEntity 클래스 생성 @syc" />
     <MESSAGE value="Member Entity 클래스 생성 @syc" />
     <MESSAGE value="Movie Entity 클래스 생성 @syc" />
@@ -412,6 +457,9 @@
     <MESSAGE value="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
     <MESSAGE value="업데이트 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
+    <MESSAGE value="README.md 수정 @syc" />
+    <MESSAGE value="MovieRepository 인터페이스, 특정 영화 조회 처리 추가 @syc" />
+    <MESSAGE value="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc" />
   </component>
 </project>
