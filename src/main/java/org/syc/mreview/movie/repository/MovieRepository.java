@@ -11,10 +11,15 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     // JPQL(369p), 띄어쓰기 중요....
     // JPQL에 MovieImage도 결합(370p)
-    @Query("select m, max(mi), avg(coalesce(r.grade,0)), count(distinct r) from Movie m " +
+//    @Query("select m, max(mi), avg(coalesce(r.grade,0)), count(distinct r) from Movie m " +
+//            "left outer join MovieImage mi on mi.movie = m  " +
+//            "left outer join Review r on r.movie = m group by m")
+//    Page<Object[]> getListPage(Pageable pageable);
+
+    // 페이징 처리 JPQL 수정(372p), max() 처리 제거로 인해 반복적인 실행 없이, 목록을 구하는 쿼리와 개수를 구하는 쿼리만 실행(항상 페이징 처리가 되는 부분에서는 limit 등이 정상적으로 실행되는지 확인)
+    @Query("select m, mi, avg(coalesce(r.grade,0)), count(distinct r) from Movie m " +
             "left outer join MovieImage mi on mi.movie = m  " +
             "left outer join Review r on r.movie = m group by m")
     Page<Object[]> getListPage(Pageable pageable);
-
 
 }
