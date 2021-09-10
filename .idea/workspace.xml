@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="ReviewRepository 인터페이스에 '@EntityGraph' 추가 @syc">
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/syc/mreview/review/repository/ReviewRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/syc/mreview/review/repository/ReviewRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,23 @@
       <recent name="org.syc.mreview" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReviewRepositoryTests.testGetMovieReviews">
+  <component name="RunManager" selected="JUnit.MemberRepositoryTests.testDeleteMember">
+    <configuration name="MemberRepositoryTests.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.member.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.member.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.member.repository.MemberRepositoryTests" />
+      <option name="METHOD_NAME" value="testDeleteMember" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieRepositoryTests.testGetMovieWithAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -121,22 +137,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewRepositoryTests.insertMovieReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mreview.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.syc.mreview.review.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.syc.mreview.review.repository" />
-      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.review.repository.ReviewRepositoryTests" />
-      <option name="METHOD_NAME" value="insertMovieReviews" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReviewRepositoryTests.testGetMovieReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -166,19 +166,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
-      <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
       <item itemvalue="Spring Boot.MreviewApplication" />
       <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
       <item itemvalue="JUnit.ReviewRepositoryTests" />
       <item itemvalue="JUnit.ReviewRepositoryTests.testGetMovieReviews" />
+      <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
         <item itemvalue="JUnit.ReviewRepositoryTests.testGetMovieReviews" />
         <item itemvalue="JUnit.ReviewRepositoryTests" />
         <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
         <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
-        <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +192,7 @@
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
-      <workItem from="1631250894589" duration="9173000" />
+      <workItem from="1631250894589" duration="11567000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -460,7 +460,56 @@
       <option name="project" value="LOCAL" />
       <updated>1631259136510</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="ReviewRepositoryTests '@Test'추가 및 간단한 수정 @syc">
+      <created>1631260412977</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1631260412977</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ReviewRepository 인터페이스에 deleteByMember() 메서드 추가 @syc">
+      <created>1631260459489</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1631260459489</updated>
+    </task>
+    <task id="LOCAL-00041" summary="ReviewRepository 인터페이스에 deleteByMember() 메서드, 주석 오타 수정 @syc">
+      <created>1631260491855</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1631260491855</updated>
+    </task>
+    <task id="LOCAL-00042" summary="업데이트 @syc">
+      <created>1631260510331</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1631260510331</updated>
+    </task>
+    <task id="LOCAL-00043" summary="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc">
+      <created>1631260892608</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1631260892608</updated>
+    </task>
+    <task id="LOCAL-00044" summary="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc">
+      <created>1631261259760</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1631261259760</updated>
+    </task>
+    <task id="LOCAL-00045" summary="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc">
+      <created>1631261473820</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1631261473820</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +520,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="syc" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -482,12 +543,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="Movie Entity 클래스 생성 @syc" />
-    <MESSAGE value="MovieImage Entity 클래스 생성 @syc" />
-    <MESSAGE value="Review Entity 클래스 생성 @syc" />
-    <MESSAGE value="'MreviewApplication'에 '@EnableJpaAuditing' 주입 @syc" />
-    <MESSAGE value="MemberRepository 인터페이스 생성 @syc" />
-    <MESSAGE value="MovieImageRepository 인터페이스 생성 @syc" />
     <MESSAGE value="MovieRepository 인터페이스 생성 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스 생성 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스 생성 @syc" />
@@ -502,11 +557,17 @@
     <MESSAGE value="MovieRepository 인터페이스, 특정 영화 조회 처리 추가 @syc" />
     <MESSAGE value="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스에 getMovieWithAll() 수정 @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="MovieRepository 인터페이스에 getMovieWithAll()의 JPQL 쿼리문 추가 수정 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에서 특정 영화 번호를 이용한 해당 영화를 리뷰한 정보 조회를 위한 메서드 추가 @syc" />
     <MESSAGE value="ReviewRepositoryTests 클래스에서 Review에서 필요한 데이터를 추출하기 위한 testGetMovieReviews() 추가 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에 '@EntityGraph' 추가 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReviewRepository 인터페이스에 '@EntityGraph' 추가 @syc" />
+    <MESSAGE value="ReviewRepositoryTests '@Test'추가 및 간단한 수정 @syc" />
+    <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드 추가 @syc" />
+    <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드, 주석 오타 수정 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <MESSAGE value="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc" />
+    <MESSAGE value="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc" />
+    <MESSAGE value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
   </component>
 </project>
