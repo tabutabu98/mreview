@@ -69,4 +69,8 @@
 |42|syc|업데이트 @syc|2021-09-10|commit 참조|
 |43|syc|MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc|2021-09-10|commit 참조|
 |44|syc|MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc|2021-09-10|commit 참조|
-|45|syc|ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc|2021-09-10|commit 참조|
+|45|syc|ReviewRepository 인  페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc|2021-09-10|commit 참조|
+|46|syc|업데이트 @syc|2021-09-10|commit 참조|
+|47|syc|README.md 수정 @syc|2021-09-10|commit 참조|
+|48|syc|업데이트 @syc|2021-09-10|commit 참조|
+|49|syc|README.md 수정 @syc|2021-09-10|제발 한번에!!!!|
