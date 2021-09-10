@@ -10,7 +10,9 @@ import org.syc.mreview.movie.entity.Movie;
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     // JPQL(369p), 띄어쓰기 중요....
-    @Query("select m, avg(coalesce(r.grade,0)), count(distinct r) from Movie m " +
+    // JPQL에 MovieImage도 결합(370p)
+    @Query("select m, max(mi), avg(coalesce(r.grade,0)), count(distinct r) from Movie m " +
+            "left outer join MovieImage mi on mi.movie = m  " +
             "left outer join Review r on r.movie = m group by m")
     Page<Object[]> getListPage(Pageable pageable);
 
