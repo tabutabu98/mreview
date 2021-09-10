@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +60,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -70,7 +74,7 @@
       <recent name="org.syc.mreview" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieRepositoryTests.testListPage">
+  <component name="RunManager" selected="Spring Boot.MreviewApplication">
     <configuration name="MemberRepositoryTests.insertMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -138,10 +142,21 @@
     <configuration name="MreviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mreview.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.syc.mreview.MreviewApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
+      <item itemvalue="JUnit.MovieRepositoryTests.insertMovies" />
+      <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
+      <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
+      <item itemvalue="Spring Boot.MreviewApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
@@ -160,7 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
-      <workItem from="1631240839998" duration="7443000" />
+      <workItem from="1631240839998" duration="7609000" />
+      <workItem from="1631250894589" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -344,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631250420731</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="업데이트 @syc">
+      <created>1631250595154</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1631250595154</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,8 +383,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+    </ignored-roots>
     <MESSAGE value="프로젝트 생성 @main" />
     <MESSAGE value="프로젝트 생성_업데이트 @main" />
     <MESSAGE value="변경이력 테이블 업데이트 @syc" />
@@ -383,8 +410,8 @@
     <MESSAGE value="MovieRepository 인터페이스에 JPQL 수정 @syc" />
     <MESSAGE value="MovieRepositoryTests testListPage() 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
   </component>
 </project>
