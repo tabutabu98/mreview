@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56816f9e-29fd-481b-9b46-e34a3a4fc731.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56816f9e-29fd-481b-9b46-e34a3a4fc731.xml" afterDir="false" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="MovieRepository 인터페이스에 JPQL 추가 @syc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/syc/mreview/movie/repository/MovieRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/syc/mreview/movie/repository/MovieRepositoryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <recent name="org.syc.mreview" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReviewRepositoryTests.insertMovieReviews">
+  <component name="RunManager" selected="JUnit.MovieRepositoryTests.testListPage">
     <configuration name="MemberRepositoryTests.insertMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -107,6 +107,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieRepositoryTests.testListPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.movie.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.movie.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.movie.repository.MovieRepositoryTests" />
+      <option name="METHOD_NAME" value="testListPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReviewRepositoryTests.insertMovieReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -132,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
         <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
         <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
         <item itemvalue="JUnit.MovieRepositoryTests.insertMovies" />
@@ -147,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
-      <workItem from="1631240839998" duration="4520000" />
+      <workItem from="1631240839998" duration="6179000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -275,7 +292,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631246459325</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="업데이트 @syc">
+      <created>1631247709971</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631247709971</updated>
+    </task>
+    <task id="LOCAL-00020" summary="MovieRepository 인터페이스에 JPQL 추가 @syc">
+      <created>1631247988735</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631247988735</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +342,7 @@
     <MESSAGE value="MovieRepositoryTests 클래스 생성 @syc" />
     <MESSAGE value="ReviewRepositoryTests 클래스 생성 @syc" />
     <MESSAGE value="업데이트 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
+    <MESSAGE value="MovieRepository 인터페이스에 JPQL 추가 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="MovieRepository 인터페이스에 JPQL 추가 @syc" />
   </component>
 </project>
