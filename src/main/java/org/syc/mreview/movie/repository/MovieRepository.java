@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.syc.mreview.movie.entity.Movie;
 
+import java.util.List;
+
 // 신규 작성(360p)
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
@@ -21,5 +23,11 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
             "left outer join MovieImage mi on mi.movie = m  " +
             "left outer join Review r on r.movie = m group by m")
     Page<Object[]> getListPage(Pageable pageable);
+
+    // 신규 작성(375p), 특정 영화 조회 처리
+    @Query("select m, mi " +
+            "from Movie m left outer join MovieImage mi on mi.movie = m " +
+            "where m.mno = :mno")
+    List<Object[]> getMovieWithAll(long mno);
 
 }
