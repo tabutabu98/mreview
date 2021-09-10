@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="README.md 수정 @syc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +189,7 @@
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
-      <workItem from="1631250894589" duration="11567000" />
+      <workItem from="1631250894589" duration="12162000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -509,7 +506,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631261473820</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="업데이트 @syc">
+      <created>1631263164264</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1631263164264</updated>
+    </task>
+    <task id="LOCAL-00047" summary="README.md 수정 @syc">
+      <created>1631263182204</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1631263182204</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,7 +564,6 @@
     <MESSAGE value="MovieRepositoryTests testListPage() 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
-    <MESSAGE value="README.md 수정 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 특정 영화 조회 처리 추가 @syc" />
     <MESSAGE value="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스에 getMovieWithAll() 수정 @syc" />
@@ -564,10 +574,11 @@
     <MESSAGE value="ReviewRepositoryTests '@Test'추가 및 간단한 수정 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드 추가 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드, 주석 오타 수정 @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <MESSAGE value="README.md 수정 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md 수정 @syc" />
   </component>
 </project>
