@@ -16,7 +16,7 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
     @EntityGraph(attributePaths = {"member"}, type = EntityGraph.EntityGraphType.FETCH)
     List<Review> findByMovie(Movie movie);
 
-    // 신규 작성(382p), 회원을 이용해서 삭제하는 메스드
+    // 신규 작성(382p), 회원을 이용해서 삭제하는 메서드
     void deleteByMember(Member member);
 
 }
