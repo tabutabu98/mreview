@@ -45,6 +45,7 @@ public class ReviewRepositoryTests {
     }
 
     // 신규 작성(379p)
+    @Test
     public void testGetMovieReviews() {
 
         Movie movie = Movie.builder().mno(92L).build();
@@ -54,10 +55,10 @@ public class ReviewRepositoryTests {
 
         result.forEach(movieReview -> {
 
-            System.out.println(movieReview.getReviewnum());
-            System.out.println("\t" + movieReview.getGrade());
-            System.out.println("\t" + movieReview.getText());
-            System.out.println("\t" + movieReview.getMember().getEmail());
+            System.out.print(movieReview.getReviewnum());
+            System.out.print("\t"+movieReview.getGrade());
+            System.out.print("\t"+movieReview.getText());
+            System.out.print("\t"+movieReview.getMember().getEmail());
             System.out.println("----------------------------------");
 
         });
