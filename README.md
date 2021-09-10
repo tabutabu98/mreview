@@ -17,6 +17,10 @@
 2. #### Annotation Processors 체크  
    * ![](pictures/IDE_Setting2.jpg)  
 
+3. ### Thymeleaf수정시 자동재가동 설정  
+   * 클릭하기<br>![](pictures/1.jpg)<br>  
+   * Do nothing -> Update classes and resources<br>![](pictures/2.jpg)<br>  
+   * 둘다 변경 후 Apply 및 OK<br>![](pictures/3.jpg)<br>  
 ***  
 ### 변경이력  
 |branch|commit|날짜|비고|
