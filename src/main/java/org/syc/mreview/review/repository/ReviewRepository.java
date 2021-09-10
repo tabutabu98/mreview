@@ -2,6 +2,7 @@ package org.syc.mreview.review.repository;
 
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.syc.mreview.member.entity.Member;
 import org.syc.mreview.movie.entity.Movie;
 import org.syc.mreview.review.entity.Review;
 
@@ -14,5 +15,8 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
     // 추가 작성(381p), @Entity 추가
     @EntityGraph(attributePaths = {"member"}, type = EntityGraph.EntityGraphType.FETCH)
     List<Review> findByMovie(Movie movie);
+
+    // 신규 작성(382p), 회원을 이용해서 삭제하는 메스드
+    void deleteByMember(Member member);
 
 }
