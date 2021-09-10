@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="README.md 수정 @syc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="UploadController 클래스 생성 @syc">
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/MreviewApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/ServletInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/common/entity/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/member/entity/Member$MemberBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/member/entity/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/member/repository/MemberRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/Movie$MovieBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/Movie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/MovieImage$MovieImageBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/MovieImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/repository/MovieImageRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/repository/MovieRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/review/entity/Review$ReviewBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/review/entity/Review.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/review/repository/ReviewRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/MreviewApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/member/repository/MemberRepositoryTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/movie/repository/MovieRepositoryTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/review/repository/ReviewRepositoryTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +36,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -192,49 +218,7 @@
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
-      <workItem from="1631250894589" duration="13009000" />
-    </task>
-    <task id="LOCAL-00001" summary="프로젝트 생성 @main">
-      <created>1631241992569</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1631241992569</updated>
-    </task>
-    <task id="LOCAL-00002" summary="프로젝트 생성_업데이트 @main">
-      <created>1631242112363</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1631242112363</updated>
-    </task>
-    <task id="LOCAL-00003" summary="변경이력 테이블 업데이트 @syc">
-      <created>1631242548157</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1631242548157</updated>
-    </task>
-    <task id="LOCAL-00004" summary="README.md 수정 @syc">
-      <created>1631242736516</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1631242736516</updated>
-    </task>
-    <task id="LOCAL-00005" summary="BaseEntity 클래스 생성 @syc">
-      <created>1631246154826</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246154826</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Member Entity 클래스 생성 @syc">
-      <created>1631246167986</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246167986</updated>
+      <workItem from="1631250894589" duration="14855000" />
     </task>
     <task id="LOCAL-00007" summary="Movie Entity 클래스 생성 @syc">
       <created>1631246183375</created>
@@ -537,7 +521,49 @@
       <option name="project" value="LOCAL" />
       <updated>1631263315291</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="업데이트 @syc">
+      <created>1631264191385</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1631264191385</updated>
+    </task>
+    <task id="LOCAL-00051" summary="README.md 수정 @syc">
+      <created>1631264209869</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1631264209869</updated>
+    </task>
+    <task id="LOCAL-00052" summary="pictures 업데이트 @syc">
+      <created>1631264457753</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1631264457753</updated>
+    </task>
+    <task id="LOCAL-00053" summary="업데이트 @syc">
+      <created>1631264468533</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1631264468533</updated>
+    </task>
+    <task id="LOCAL-00054" summary="yml, 파일 업로드를 위한 설정 추가 @syc">
+      <created>1631265613256</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1631265613257</updated>
+    </task>
+    <task id="LOCAL-00055" summary="UploadController 클래스 생성 @syc">
+      <created>1631265648446</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1631265648446</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,9 +597,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="MovieRepository 인터페이스 생성 @syc" />
-    <MESSAGE value="ReviewRepository 인터페이스 생성 @syc" />
-    <MESSAGE value="MemberRepositoryTests 클래스 생성 @syc" />
     <MESSAGE value="MovieRepositoryTests 클래스 생성 @syc" />
     <MESSAGE value="ReviewRepositoryTests 클래스 생성 @syc" />
     <MESSAGE value="MovieRepository 인터페이스에 JPQL 추가 @syc" />
@@ -594,8 +617,11 @@
     <MESSAGE value="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="README.md 수정 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md 수정 @syc" />
+    <MESSAGE value="pictures 업데이트 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <MESSAGE value="yml, 파일 업로드를 위한 설정 추가 @syc" />
+    <MESSAGE value="UploadController 클래스 생성 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="UploadController 클래스 생성 @syc" />
   </component>
 </project>
