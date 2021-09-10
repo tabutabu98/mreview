@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="README.md 수정 @syc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/member/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/member/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/entity/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/entity/MovieImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieImageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/entity/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/syc/mreview/member/repository/MemberRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/syc/mreview/movie/repository/MovieRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/syc/mreview/review/repository/ReviewRepositoryTests.java" afterDir="false" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56816f9e-29fd-481b-9b46-e34a3a4fc731.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56816f9e-29fd-481b-9b46-e34a3a4fc731.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/MreviewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/MreviewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +74,55 @@
       <recent name="org.syc.mreview" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReviewRepositoryTests.insertMovieReviews">
+    <configuration name="MemberRepositoryTests.insertMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.member.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.member.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.member.repository.MemberRepositoryTests" />
+      <option name="METHOD_NAME" value="insertMembers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRepositoryTests.insertMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.movie.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.movie.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.movie.repository.MovieRepositoryTests" />
+      <option name="METHOD_NAME" value="insertMovies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewRepositoryTests.insertMovieReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.review.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.review.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.review.repository.ReviewRepositoryTests" />
+      <option name="METHOD_NAME" value="insertMovieReviews" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MreviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mreview.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.syc.mreview.MreviewApplication" />
@@ -93,6 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
+        <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
+        <item itemvalue="JUnit.MovieRepositoryTests.insertMovies" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
-      <workItem from="1631240839998" duration="3105000" />
+      <workItem from="1631240839998" duration="4520000" />
     </task>
     <task id="LOCAL-00001" summary="프로젝트 생성 @main">
       <created>1631241992569</created>
@@ -133,7 +177,105 @@
       <option name="project" value="LOCAL" />
       <updated>1631242736516</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="BaseEntity 클래스 생성 @syc">
+      <created>1631246154826</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246154826</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Member Entity 클래스 생성 @syc">
+      <created>1631246167986</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246167986</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Movie Entity 클래스 생성 @syc">
+      <created>1631246183375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246183375</updated>
+    </task>
+    <task id="LOCAL-00008" summary="MovieImage Entity 클래스 생성 @syc">
+      <created>1631246201417</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246201417</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Review Entity 클래스 생성 @syc">
+      <created>1631246223677</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246223677</updated>
+    </task>
+    <task id="LOCAL-00010" summary="'MreviewApplication'에 '@EnableJpaAuditing' 주입 @syc">
+      <created>1631246300257</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246300257</updated>
+    </task>
+    <task id="LOCAL-00011" summary="MemberRepository 인터페이스 생성 @syc">
+      <created>1631246320770</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246320770</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MovieImageRepository 인터페이스 생성 @syc">
+      <created>1631246355829</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246355829</updated>
+    </task>
+    <task id="LOCAL-00013" summary="MovieRepository 인터페이스 생성 @syc">
+      <created>1631246377960</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246377960</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ReviewRepository 인터페이스 생성 @syc">
+      <created>1631246396353</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246396353</updated>
+    </task>
+    <task id="LOCAL-00015" summary="MemberRepositoryTests 클래스 생성 @syc">
+      <created>1631246419726</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246419726</updated>
+    </task>
+    <task id="LOCAL-00016" summary="MovieRepositoryTests 클래스 생성 @syc">
+      <created>1631246433599</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246433599</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ReviewRepositoryTests 클래스 생성 @syc">
+      <created>1631246448139</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246448139</updated>
+    </task>
+    <task id="LOCAL-00018" summary="업데이트 @syc">
+      <created>1631246459325</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1631246459325</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +297,20 @@
     <MESSAGE value="프로젝트 생성_업데이트 @main" />
     <MESSAGE value="변경이력 테이블 업데이트 @syc" />
     <MESSAGE value="README.md 수정 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md 수정 @syc" />
+    <MESSAGE value="BaseEntity 클래스 생성 @syc" />
+    <MESSAGE value="Member Entity 클래스 생성 @syc" />
+    <MESSAGE value="Movie Entity 클래스 생성 @syc" />
+    <MESSAGE value="MovieImage Entity 클래스 생성 @syc" />
+    <MESSAGE value="Review Entity 클래스 생성 @syc" />
+    <MESSAGE value="'MreviewApplication'에 '@EnableJpaAuditing' 주입 @syc" />
+    <MESSAGE value="MemberRepository 인터페이스 생성 @syc" />
+    <MESSAGE value="MovieImageRepository 인터페이스 생성 @syc" />
+    <MESSAGE value="MovieRepository 인터페이스 생성 @syc" />
+    <MESSAGE value="ReviewRepository 인터페이스 생성 @syc" />
+    <MESSAGE value="MemberRepositoryTests 클래스 생성 @syc" />
+    <MESSAGE value="MovieRepositoryTests 클래스 생성 @syc" />
+    <MESSAGE value="ReviewRepositoryTests 클래스 생성 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
   </component>
 </project>

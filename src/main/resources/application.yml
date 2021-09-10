@@ -23,6 +23,6 @@ server:
   error:
     include-exception: false       # 오류 응답에 exception의 내용을 포함할지 여부(끔)
     include-stacktrace: never      # 오류 응답에 stacktrace 내용을 포함할지 여부(끔)
-    path:                          # 오류 응담을 처리할 핸들러(ErrorController)의 path(경로)
-    whitelabel:
-      enabled:  # 브라우저 요청에 대해 서버 오류시 기본으로 노출할 페이지를 사용할지 여부
+#    path:                          # 오류 응담을 처리할 핸들러(ErrorController)의 path(경로)
+#    whitelabel:
+#      enabled:  # 브라우저 요청에 대해 서버 오류시 기본으로 노출할 페이지를 사용할지 여부

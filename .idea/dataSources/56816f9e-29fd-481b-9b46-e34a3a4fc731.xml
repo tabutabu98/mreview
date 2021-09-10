@@ -1041,147 +1041,339 @@ bootex|schema||bootuser||grant option|G</Grants>
     <user id="326" parent="1" name="bootuser"/>
     <table id="327" parent="2" name="board"/>
     <table id="328" parent="2" name="guestbook"/>
-    <table id="329" parent="2" name="member"/>
-    <table id="330" parent="2" name="reply"/>
-    <column id="331" parent="327" name="bno">
+    <table id="329" parent="2" name="hibernate_sequence"/>
+    <table id="330" parent="2" name="m_member"/>
+    <table id="331" parent="2" name="member"/>
+    <table id="332" parent="2" name="movie"/>
+    <table id="333" parent="2" name="movie_image"/>
+    <table id="334" parent="2" name="reply"/>
+    <table id="335" parent="2" name="review"/>
+    <column id="336" parent="327" name="bno">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="332" parent="327" name="moddate">
+    <column id="337" parent="327" name="moddate">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="333" parent="327" name="regdate">
+    <column id="338" parent="327" name="regdate">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="334" parent="327" name="content">
+    <column id="339" parent="327" name="content">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="335" parent="327" name="title">
+    <column id="340" parent="327" name="title">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="336" parent="327" name="writer_email">
+    <column id="341" parent="327" name="writer_email">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <index id="337" parent="327" name="FK1iu8rhoim4thb0y12cpt01oiu">
+    <index id="342" parent="327" name="FK1iu8rhoim4thb0y12cpt01oiu">
       <ColNames>writer_email</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="338" parent="327" name="PRIMARY">
+    <key id="343" parent="327" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>bno</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="339" parent="327" name="FK1iu8rhoim4thb0y12cpt01oiu">
+    <foreign-key id="344" parent="327" name="FK1iu8rhoim4thb0y12cpt01oiu">
       <ColNames>writer_email</ColNames>
       <RefTableName>member</RefTableName>
       <RefColNames>email</RefColNames>
     </foreign-key>
-    <column id="340" parent="328" name="gno">
+    <column id="345" parent="328" name="gno">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="341" parent="328" name="moddate">
+    <column id="346" parent="328" name="moddate">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="342" parent="328" name="regdate">
+    <column id="347" parent="328" name="regdate">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="343" parent="328" name="content">
+    <column id="348" parent="328" name="content">
       <Position>4</Position>
       <DataType>varchar(1500)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="344" parent="328" name="title">
+    <column id="349" parent="328" name="title">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="345" parent="328" name="writer">
+    <column id="350" parent="328" name="writer">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="346" parent="328" name="PRIMARY">
+    <key id="351" parent="328" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>gno</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="347" parent="329" name="email">
+    <column id="352" parent="329" name="next_not_cached_value">
       <Position>1</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>bigint(21)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="348" parent="329" name="moddate">
+    <column id="353" parent="329" name="minimum_value">
       <Position>2</Position>
-      <DataType>datetime(6)|0s</DataType>
+      <DataType>bigint(21)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="349" parent="329" name="regdate">
+    <column id="354" parent="329" name="maximum_value">
       <Position>3</Position>
-      <DataType>datetime(6)|0s</DataType>
+      <DataType>bigint(21)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="350" parent="329" name="name">
+    <column id="355" parent="329" name="start_value">
       <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <Comment>start value when sequences is created or value if RESTART is used</Comment>
+      <DataType>bigint(21)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="351" parent="329" name="password">
+    <column id="356" parent="329" name="increment">
       <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <Comment>increment value</Comment>
+      <DataType>bigint(21)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <key id="352" parent="329" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>email</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="353" parent="330" name="rno">
+    <column id="357" parent="329" name="cache_size">
+      <Position>6</Position>
+      <DataType>bigint(21) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="358" parent="329" name="cycle_option">
+      <Position>7</Position>
+      <Comment>0 if no cycles are allowed, 1 if the sequence should begin a new cycle when maximum_value is passed</Comment>
+      <DataType>tinyint(1) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="359" parent="329" name="cycle_count">
+      <Position>8</Position>
+      <Comment>How many cycles have been done</Comment>
+      <DataType>bigint(21)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="360" parent="330" name="mid">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="354" parent="330" name="moddate">
+    <column id="361" parent="330" name="moddate">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="355" parent="330" name="regdate">
+    <column id="362" parent="330" name="regdate">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="356" parent="330" name="replyer">
+    <column id="363" parent="330" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="357" parent="330" name="text">
+    <column id="364" parent="330" name="nickname">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="358" parent="330" name="board_bno">
+    <column id="365" parent="330" name="pw">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="366" parent="330" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>mid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="367" parent="331" name="email">
+      <Position>1</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="368" parent="331" name="moddate">
+      <Position>2</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="369" parent="331" name="regdate">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="370" parent="331" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="371" parent="331" name="password">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="372" parent="331" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>email</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="373" parent="332" name="mno">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="374" parent="332" name="moddate">
+      <Position>2</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="375" parent="332" name="regdate">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="376" parent="332" name="title">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <key id="377" parent="332" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>mno</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="378" parent="333" name="inum">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="379" parent="333" name="img_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="380" parent="333" name="path">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="381" parent="333" name="uuid">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="382" parent="333" name="movie_mno">
+      <Position>5</Position>
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <index id="383" parent="333" name="FKitwj3761d8j8ku189u4qrseih">
+      <ColNames>movie_mno</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="384" parent="333" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>inum</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="385" parent="333" name="FKitwj3761d8j8ku189u4qrseih">
+      <ColNames>movie_mno</ColNames>
+      <RefTableName>movie</RefTableName>
+      <RefColNames>mno</RefColNames>
+    </foreign-key>
+    <column id="386" parent="334" name="rno">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="387" parent="334" name="moddate">
+      <Position>2</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="388" parent="334" name="regdate">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="389" parent="334" name="replyer">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="390" parent="334" name="text">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="391" parent="334" name="board_bno">
       <Position>6</Position>
       <DataType>bigint(20)|0s</DataType>
     </column>
-    <index id="359" parent="330" name="FKr1bmblqir7dalmh47ngwo7mcs">
+    <index id="392" parent="334" name="FKr1bmblqir7dalmh47ngwo7mcs">
       <ColNames>board_bno</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="360" parent="330" name="PRIMARY">
+    <key id="393" parent="334" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>rno</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="361" parent="330" name="FKr1bmblqir7dalmh47ngwo7mcs">
+    <foreign-key id="394" parent="334" name="FKr1bmblqir7dalmh47ngwo7mcs">
       <ColNames>board_bno</ColNames>
       <RefTableName>board</RefTableName>
       <RefColNames>bno</RefColNames>
+    </foreign-key>
+    <column id="395" parent="335" name="reviewnum">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="396" parent="335" name="moddate">
+      <Position>2</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="397" parent="335" name="regdate">
+      <Position>3</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="398" parent="335" name="grade">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="399" parent="335" name="text">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="400" parent="335" name="member_mid">
+      <Position>6</Position>
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <column id="401" parent="335" name="movie_mno">
+      <Position>7</Position>
+      <DataType>bigint(20)|0s</DataType>
+    </column>
+    <index id="402" parent="335" name="FK9gnx8llky658xey9qg00djyg5">
+      <ColNames>member_mid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="403" parent="335" name="FKdg4bkv5wfpxx015elj4h915gw">
+      <ColNames>movie_mno</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="404" parent="335" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>reviewnum</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="405" parent="335" name="FK9gnx8llky658xey9qg00djyg5">
+      <ColNames>member_mid</ColNames>
+      <RefTableName>m_member</RefTableName>
+      <RefColNames>mid</RefColNames>
+    </foreign-key>
+    <foreign-key id="406" parent="335" name="FKdg4bkv5wfpxx015elj4h915gw">
+      <ColNames>movie_mno</ColNames>
+      <RefTableName>movie</RefTableName>
+      <RefColNames>mno</RefColNames>
     </foreign-key>
   </database-model>
 </dataSource>
