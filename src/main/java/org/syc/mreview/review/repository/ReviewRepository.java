@@ -2,6 +2,8 @@ package org.syc.mreview.review.repository;
 
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.syc.mreview.member.entity.Member;
 import org.syc.mreview.movie.entity.Movie;
 import org.syc.mreview.review.entity.Review;
@@ -17,6 +19,9 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
     List<Review> findByMovie(Movie movie);
 
     // 신규 작성(382p), 회원을 이용해서 삭제하는 메서드
+    // 추가 수정(385p), @Modifying, @Query 추가
+    @Modifying  // update, delete를 이용하기 위한 추가
+    @Query("delete from Review mr where mr.member = :member")
     void deleteByMember(Member member);
 
 }
