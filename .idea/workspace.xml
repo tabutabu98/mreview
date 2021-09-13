@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="README.md 수정 @syc">
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/MreviewApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/ServletInitializer.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/common/entity/BaseEntity.class" afterDir="false" />
@@ -25,11 +25,6 @@
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/member/repository/MemberRepositoryTests.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/movie/repository/MovieRepositoryTests.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/review/repository/ReviewRepositoryTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,42 +220,7 @@
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
       <workItem from="1631250894589" duration="15196000" />
-      <workItem from="1631494368112" duration="2233000" />
-    </task>
-    <task id="LOCAL-00009" summary="Review Entity 클래스 생성 @syc">
-      <created>1631246223677</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246223677</updated>
-    </task>
-    <task id="LOCAL-00010" summary="'MreviewApplication'에 '@EnableJpaAuditing' 주입 @syc">
-      <created>1631246300257</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246300257</updated>
-    </task>
-    <task id="LOCAL-00011" summary="MemberRepository 인터페이스 생성 @syc">
-      <created>1631246320770</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246320770</updated>
-    </task>
-    <task id="LOCAL-00012" summary="MovieImageRepository 인터페이스 생성 @syc">
-      <created>1631246355829</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246355829</updated>
-    </task>
-    <task id="LOCAL-00013" summary="MovieRepository 인터페이스 생성 @syc">
-      <created>1631246377960</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246377960</updated>
+      <workItem from="1631494368112" duration="2672000" />
     </task>
     <task id="LOCAL-00014" summary="ReviewRepository 인터페이스 생성 @syc">
       <created>1631246396353</created>
@@ -570,7 +530,42 @@
       <option name="project" value="LOCAL" />
       <updated>1631265941762</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="application.yml, 업로드된 파일의 저장 추가 @syc">
+      <created>1631496770379</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1631496770379</updated>
+    </task>
+    <task id="LOCAL-00059" summary="UploadController, application.yml의 Path 값 추가 @syc">
+      <created>1631496909739</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1631496909739</updated>
+    </task>
+    <task id="LOCAL-00060" summary="UploadTestController, 신규 생성 @syc">
+      <created>1631496946874</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1631496946874</updated>
+    </task>
+    <task id="LOCAL-00061" summary="uploadEx.html, 신규 생성 @syc">
+      <created>1631496975722</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1631496975722</updated>
+    </task>
+    <task id="LOCAL-00062" summary="업데이트 @syc">
+      <created>1631496995071</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1631496995071</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,10 +599,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="MovieRepositoryTests 클래스 생성 @syc" />
-    <MESSAGE value="ReviewRepositoryTests 클래스 생성 @syc" />
-    <MESSAGE value="MovieRepository 인터페이스에 JPQL 추가 @syc" />
-    <MESSAGE value="MovieRepository 인터페이스에 JPQL 수정 @syc" />
     <MESSAGE value="MovieRepositoryTests testListPage() 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
@@ -627,8 +618,12 @@
     <MESSAGE value="pictures 업데이트 @syc" />
     <MESSAGE value="yml, 파일 업로드를 위한 설정 추가 @syc" />
     <MESSAGE value="UploadController 클래스 생성 @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="README.md 수정 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md 수정 @syc" />
+    <MESSAGE value="application.yml, 업로드된 파일의 저장 추가 @syc" />
+    <MESSAGE value="UploadController, application.yml의 Path 값 추가 @syc" />
+    <MESSAGE value="UploadTestController, 신규 생성 @syc" />
+    <MESSAGE value="uploadEx.html, 신규 생성 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
   </component>
 </project>
