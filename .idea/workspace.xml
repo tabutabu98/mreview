@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="UploadController 클래스 생성 @syc">
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="README.md 수정 @syc">
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/MreviewApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/ServletInitializer.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/common/entity/BaseEntity.class" afterDir="false" />
@@ -25,7 +25,11 @@
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/member/repository/MemberRepositoryTests.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/movie/repository/MovieRepositoryTests.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/review/repository/ReviewRepositoryTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +45,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -77,6 +82,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -99,7 +105,7 @@
       <recent name="org.syc.mreview" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MemberRepositoryTests.testDeleteMember">
+  <component name="RunManager" selected="Spring Boot.MreviewApplication">
     <configuration name="MemberRepositoryTests.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -192,11 +198,11 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.MovieRepositoryTests.testListPage" />
-      <item itemvalue="Spring Boot.MreviewApplication" />
       <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
       <item itemvalue="JUnit.ReviewRepositoryTests" />
       <item itemvalue="JUnit.ReviewRepositoryTests.testGetMovieReviews" />
       <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
+      <item itemvalue="Spring Boot.MreviewApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -218,21 +224,8 @@
       <updated>1631240562802</updated>
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
-      <workItem from="1631250894589" duration="14855000" />
-    </task>
-    <task id="LOCAL-00007" summary="Movie Entity 클래스 생성 @syc">
-      <created>1631246183375</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246183375</updated>
-    </task>
-    <task id="LOCAL-00008" summary="MovieImage Entity 클래스 생성 @syc">
-      <created>1631246201417</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246201417</updated>
+      <workItem from="1631250894589" duration="15196000" />
+      <workItem from="1631494368112" duration="2233000" />
     </task>
     <task id="LOCAL-00009" summary="Review Entity 클래스 생성 @syc">
       <created>1631246223677</created>
@@ -563,7 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631265648446</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="업데이트 @syc">
+      <created>1631265928970</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1631265928970</updated>
+    </task>
+    <task id="LOCAL-00057" summary="README.md 수정 @syc">
+      <created>1631265941762</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1631265941762</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,11 +624,11 @@
     <MESSAGE value="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
-    <MESSAGE value="README.md 수정 @syc" />
     <MESSAGE value="pictures 업데이트 @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="yml, 파일 업로드를 위한 설정 추가 @syc" />
     <MESSAGE value="UploadController 클래스 생성 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="UploadController 클래스 생성 @syc" />
+    <MESSAGE value="업데이트 @syc" />
+    <MESSAGE value="README.md 수정 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md 수정 @syc" />
   </component>
 </project>
