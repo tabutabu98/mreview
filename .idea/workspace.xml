@@ -25,7 +25,7 @@
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/member/repository/MemberRepositoryTests.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/movie/repository/MovieRepositoryTests.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/review/repository/ReviewRepositoryTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,21 +221,7 @@
       <workItem from="1631240564130" duration="228000" />
       <workItem from="1631240839998" duration="7609000" />
       <workItem from="1631250894589" duration="15196000" />
-      <workItem from="1631494368112" duration="7301000" />
-    </task>
-    <task id="LOCAL-00017" summary="ReviewRepositoryTests 클래스 생성 @syc">
-      <created>1631246448139</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246448139</updated>
-    </task>
-    <task id="LOCAL-00018" summary="업데이트 @syc">
-      <created>1631246459325</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1631246459325</updated>
+      <workItem from="1631494368112" duration="8922000" />
     </task>
     <task id="LOCAL-00019" summary="업데이트 @syc">
       <created>1631247709971</created>
@@ -566,7 +552,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631500459079</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="UploadController, 수정 및 업로드 이미지 출력하기(ResposeEntity) 추가 @syc">
+      <created>1631502067563</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1631502067563</updated>
+    </task>
+    <task id="LOCAL-00067" summary="업데이트 @syc">
+      <created>1631502075946</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1631502075946</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +600,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc" />
     <MESSAGE value="MovieRepository 인터페이스, 특정 영화 조회 처리 추가 @syc" />
     <MESSAGE value="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc" />
     <MESSAGE value="MovieRepository 인터페이스에 getMovieWithAll() 수정 @syc" />
@@ -624,6 +623,7 @@
     <MESSAGE value="uploadEx.html, 신규 생성 @syc" />
     <MESSAGE value="UploadController, 메인 메소드 추가 수정, makeFolder() 메소드 추가 @syc" />
     <MESSAGE value="UploadResultDTO 클래스 생성 @syc" />
+    <MESSAGE value="UploadController, 수정 및 업로드 이미지 출력하기(ResposeEntity) 추가 @syc" />
     <MESSAGE value="업데이트 @syc" />
     <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
   </component>
