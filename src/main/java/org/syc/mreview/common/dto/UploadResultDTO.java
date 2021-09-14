@@ -25,6 +25,18 @@ public class UploadResultDTO implements Serializable {
         }
 
         return "";
-    }
+    }   // getImageURL() 메서드의 끝
+
+    // 신규 작성(407p)
+    public String getThumbnailURL() {
+
+        try {
+            return URLEncoder.encode(folderPath+"/s_"+uuid+"_"+fileName, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        return "";
+    }   //getThumbnailURL() 메서드의 끝
 
 }   // UploadResultDTO의 끝
