@@ -71,6 +71,20 @@
             }
         }
 
+        // 신규 작성(408p)
+        function showUploadedImages(arr) {
+
+            console.log(arr);
+
+            var divArea = $(".uploadResult");
+
+            for (var i = 0; i < arr.length; i++) {
+                // thumbnailURL로 변경
+                divArea.append("<img src='/display?fileName="+arr[i].thumbnailURL+"'>");
+            }
+
+        }
+
     </script>
 
 </body>
