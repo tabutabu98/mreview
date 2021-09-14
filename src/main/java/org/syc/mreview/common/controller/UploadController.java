@@ -93,13 +93,13 @@ public class UploadController {
 
             log.info("fileName: " + fileName);
 
-            // 추가 작성(396p), 날짜 폴더 생성
+            // 추가 작성(399p), 날짜 폴더 생성
             String folderPath = makeFolder();
 
-            // 추가 작성(396p), UUID
+            // 추가 작성(399p), UUID
             String uuid = UUID.randomUUID().toString();
 
-            // 추가 작성(396p), 저장할 파일 이름 중간에 "_"를 이용해서 구분
+            // 추가 작성(399p), 저장할 파일 이름 중간에 "_"를 이용해서 구분
             String saveName = uploadPath + File.separator + folderPath + File.separator + uuid + "_" + fileName;
 
             Path savePath = Paths.get(saveName);
@@ -122,13 +122,13 @@ public class UploadController {
 
         String str = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
 
-        String folderPath = str.replace("/", File.separator);
+        String folderPath = str.replace("//", File.separator);
 
         // make folder ------------------------------------------------
         File uploadPathFolder = new File(uploadPath, folderPath);
 
         if(uploadPathFolder.exists() == false) {
-            uploadPathFolder.mkdir();
+            uploadPathFolder.mkdirs();
         }
 
         return folderPath;
