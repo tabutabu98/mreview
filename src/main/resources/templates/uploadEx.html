@@ -11,7 +11,7 @@
     <input name="uploadFiles" type="file" multiple>
     <button class="uploadBtn">Upload</button>
 
-    <!-- 추가 작성(402p) -->
+    <!-- 추가 작성(402p), 섬네일 구간 -->
     <div class="uploadResult"></div>
     <!-- 추가 작성끝(402p) -->
 
@@ -60,6 +60,7 @@
         }); // uploadBtn의 click 기능 끝
 
         // 신규 작성(403p), showUploadedImage() 함수 작성
+        // 추가 수정(408p)
         function showUploadedImages(arr) {
 
             console.log(arr);
@@ -67,22 +68,12 @@
             var divArea = $(".uploadResult");
 
             for (var i = 0; i < arr.length; i++) {
-                divArea.append("<img src='/display?fileName="+arr[i].imageURL+"'>")
-            }
-        }
+                // 아래 코드는 수정됨으로 주석처리
+                // divArea.append("<img src='/display?fileName="+arr[i].imageURL+"'>")
 
-        // 신규 작성(408p)
-        function showUploadedImages(arr) {
-
-            console.log(arr);
-
-            var divArea = $(".uploadResult");
-
-            for (var i = 0; i < arr.length; i++) {
                 // thumbnailURL로 변경
                 divArea.append("<img src='/display?fileName="+arr[i].thumbnailURL+"'>");
             }
-
         }
 
     </script>
