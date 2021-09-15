@@ -5,8 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/MovieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/dto/MovieDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/dto/MovieImageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/simple-sidebar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/vendor/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/layout1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +153,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/org/syc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -123,11 +164,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.syc.mreview.movie.dto" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources" />
+      <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources\templates" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\test\java\org\syc" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\main\java\org\syc\mreview" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\main\resources" />
-      <recent name="C:\Users\SongYeChan\Desktop\mreview" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.syc.mreview.common.entity" />
@@ -263,27 +308,6 @@
       <workItem from="1631597191161" duration="7903000" />
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
-    </task>
-    <task id="LOCAL-00033" summary="업데이트 @syc">
-      <created>1631256586993</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1631256586993</updated>
-    </task>
-    <task id="LOCAL-00034" summary="MovieRepository 인터페이스에 getMovieWithAll()의 JPQL 쿼리문 추가 수정 @syc">
-      <created>1631257329004</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1631257329004</updated>
-    </task>
-    <task id="LOCAL-00035" summary="MovieRepository 인터페이스에 getMovieWithAll()의 JPQL 쿼리문 추가 수정 @syc">
-      <created>1631257739290</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1631257739290</updated>
     </task>
     <task id="LOCAL-00036" summary="ReviewRepository 인터페이스에서 특정 영화 번호를 이용한 해당 영화를 리뷰한 정보 조회를 위한 메서드 추가 @syc">
       <created>1631258104471</created>
@@ -607,7 +631,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631672242844</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="UploadController, 업로드 파일 삭제 맵핑 추가 @syc">
+      <created>1631673916371</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1631673916371</updated>
+    </task>
+    <task id="LOCAL-00083" summary="uploadEx.html, showUploadedImages 추가 및 수정, uploadResult의 삭제버튼 로직 추가 @syc">
+      <created>1631673993265</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1631673993265</updated>
+    </task>
+    <task id="LOCAL-00084" summary="workspace.xml, 업데이트 @syc">
+      <created>1631674014007</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1631674014007</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,8 +686,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc" />
-    <MESSAGE value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
     <MESSAGE value="pictures 업데이트 @syc" />
     <MESSAGE value="yml, 파일 업로드를 위한 설정 추가 @syc" />
     <MESSAGE value="UploadController 클래스 생성 @syc" />
@@ -665,6 +708,8 @@
     <MESSAGE value="application.yml, 파일 하나의 최대 크기 수정 @syc" />
     <MESSAGE value="UploadController, &quot;/&quot; -&gt; SEPERATOR 로 정의 @syc" />
     <MESSAGE value="uploadEx.html, ajax에서 dataType: 'json'으로 오타 수정 @syc" />
+    <MESSAGE value="UploadController, 업로드 파일 삭제 맵핑 추가 @syc" />
+    <MESSAGE value="uploadEx.html, showUploadedImages 추가 및 수정, uploadResult의 삭제버튼 로직 추가 @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
