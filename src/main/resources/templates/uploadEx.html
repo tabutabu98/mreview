@@ -67,14 +67,50 @@
 
             var divArea = $(".uploadResult");
 
+            // 신규 작성(410p), var str
+            var str = "";
+
             for (var i = 0; i < arr.length; i++) {
                 // 아래 코드는 수정됨으로 주석처리
                 // divArea.append("<img src='/display?fileName="+arr[i].imageURL+"'>")
 
+                // div 태그
+                str += "<div>";
+                // 섬네일 이미지 삭제
+                str += "<img src='/display?fileName="+arr[i].thumbnailURL+"'>";
+                // 원본 이미지 삭제
+                str += "<button class='removeBtn' data-name='"+arr[i].imageURL+"'>REMOVE</button>"
+                str += "</div>";
+
+
                 // thumbnailURL로 변경
-                divArea.append("<img src='/display?fileName="+arr[i].thumbnailURL+"'>");
+                // divArea.append("<img src='/display?fileName="+arr[i].thumbnailURL+"'>");
             }
+
+            // 각각의 섬네일 사진에 삭제 버튼 달기기
+            divArea.append(str);
         }
+
+        // uploadResult의 삭제버튼 로직
+        $(".uploadResult").on("click", ".removeBtn", function (e) {
+
+            var target = $(this);
+            var fileName = target.data("name");
+            var targetDiv = $(this).closest("div");
+
+            console.log(fileName);
+
+            $.post('/removeFile', {fileName: fileName}, function (result){
+
+                console.log(result);
+
+                if (result === true){
+                    targetDiv.remove();
+                }
+
+            })
+
+        });
 
     </script>
 
