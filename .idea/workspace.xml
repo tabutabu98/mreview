@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,27 +270,6 @@
       <workItem from="1631597191161" duration="7903000" />
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
-    </task>
-    <task id="LOCAL-00044" summary="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc">
-      <created>1631261259760</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1631261259760</updated>
-    </task>
-    <task id="LOCAL-00045" summary="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc">
-      <created>1631261473820</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1631261473820</updated>
-    </task>
-    <task id="LOCAL-00046" summary="업데이트 @syc">
-      <created>1631263164264</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1631263164264</updated>
     </task>
     <task id="LOCAL-00047" summary="README.md 수정 @syc">
       <created>1631263182204</created>
@@ -612,7 +593,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631679921554</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="MovieService, 인터페이스 생성 @syc">
+      <created>1631680141840</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1631680141840</updated>
+    </task>
+    <task id="LOCAL-00094" summary="MovieServiceImpl, 클래스 생성 @syc">
+      <created>1631680157575</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1631680157575</updated>
+    </task>
+    <task id="LOCAL-00095" summary="workspace.xml, 업데이트 @syc">
+      <created>1631680175988</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1631680175988</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,8 +648,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="uploadEx.html, 신규 생성 @syc" />
-    <MESSAGE value="UploadController, 메인 메소드 추가 수정, makeFolder() 메소드 추가 @syc" />
     <MESSAGE value="UploadResultDTO 클래스 생성 @syc" />
     <MESSAGE value="UploadController, 수정 및 업로드 이미지 출력하기(ResposeEntity) 추가 @syc" />
     <MESSAGE value="application.yml, 오타 수정 @syc" />
@@ -670,6 +670,8 @@
     <MESSAGE value="MovieDTO, 생성 @syc" />
     <MESSAGE value="MovieImageDTO, 생성 @syc" />
     <MESSAGE value="README.md, 업데이트 @syc" />
+    <MESSAGE value="MovieService, 인터페이스 생성 @syc" />
+    <MESSAGE value="MovieServiceImpl, 클래스 생성 @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
