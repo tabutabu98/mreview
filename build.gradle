@@ -35,7 +35,7 @@ dependencies {
     implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time', version: '3.0.4.RELEASE'
 
     // Thumbnailator 라이브러리 추가
-    implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.12'
+    implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.14'
 }
 
 test {
