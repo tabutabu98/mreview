@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<!-- 신규 작성(416p) -->
+<th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+
+    <th:block th:fragment="content">
+
+        <!-- 영화 등록 페이지 -->
+        <h1 class="mt-4">Movie Register Page</h1>
+
+        <!-- post방식의 폼 -->
+        <form th:action="@{/movie/register}" th:method="post">
+            <!-- 제목 -->
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" name="title" placeholder="Enter Title">
+            </div>
+
+            <!-- 이미지 파일 -->
+            <div class="form-group" fileForm>
+                <label>Image Files</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input files" id="fileInput" multiple>
+                    <label class="custom-file-label" data-browse="Browse"></label>
+                </div>
+            </div>
+
+            <div class="box">
+
+            </div>
+
+            <!-- 전송버튼 -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+    </th:block>
+
+</th:block>
+
+</html>
