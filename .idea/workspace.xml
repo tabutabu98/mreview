@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -265,34 +263,6 @@
       <workItem from="1631597191161" duration="7903000" />
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
-    </task>
-    <task id="LOCAL-00029" summary="README.md 수정 @syc">
-      <created>1631254023218</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1631254023218</updated>
-    </task>
-    <task id="LOCAL-00030" summary="MovieRepository 인터페이스, 특정 영화 조회 처리 추가 @syc">
-      <created>1631254635032</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1631254635032</updated>
-    </task>
-    <task id="LOCAL-00031" summary="MovieRepositoryTests 클래스에 testGetMovieWithAll() 테스트용 기능 추가 @syc">
-      <created>1631256440916</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1631256440916</updated>
-    </task>
-    <task id="LOCAL-00032" summary="MovieRepository 인터페이스에 getMovieWithAll() 수정 @syc">
-      <created>1631256572220</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1631256572220</updated>
     </task>
     <task id="LOCAL-00033" summary="업데이트 @syc">
       <created>1631256586993</created>
@@ -609,7 +579,35 @@
       <option name="project" value="LOCAL" />
       <updated>1631620597935</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="application.yml, 파일 하나의 최대 크기 수정 @syc">
+      <created>1631672115752</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1631672115752</updated>
+    </task>
+    <task id="LOCAL-00079" summary="UploadController, &quot;/&quot; -&gt; SEPERATOR 로 정의 @syc">
+      <created>1631672165428</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1631672165428</updated>
+    </task>
+    <task id="LOCAL-00080" summary="uploadEx.html, ajax에서 dataType: 'json'으로 오타 수정 @syc">
+      <created>1631672228503</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1631672228503</updated>
+    </task>
+    <task id="LOCAL-00081" summary="workspace.xml, 업데이트 @syc">
+      <created>1631672242844</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1631672242844</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,9 +641,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드 추가 @syc" />
-    <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드, 주석 오타 수정 @syc" />
-    <MESSAGE value="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스, testDeleteMember()메서드의 수정, '@Transactional', '@Commit'추가 및 순서 변경 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에서 findByMovie() 메서드에 @Modifying, @Query 추가 @syc" />
     <MESSAGE value="pictures 업데이트 @syc" />
@@ -667,6 +662,9 @@
     <MESSAGE value="UploadController, uploadFile내의 try에 섬네일 생성, 섬네일 파일 이름에 s붙이는 기능 추가 @syc" />
     <MESSAGE value="uploadEx.html, function showUploadedImages 기능 추가 @syc" />
     <MESSAGE value="UploadResultDTO, getThumbnailURL() 메서드 추가 @syc" />
+    <MESSAGE value="application.yml, 파일 하나의 최대 크기 수정 @syc" />
+    <MESSAGE value="UploadController, &quot;/&quot; -&gt; SEPERATOR 로 정의 @syc" />
+    <MESSAGE value="uploadEx.html, ajax에서 dataType: 'json'으로 오타 수정 @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
