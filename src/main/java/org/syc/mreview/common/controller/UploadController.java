@@ -30,6 +30,7 @@ import java.util.UUID;
 @Log4j2
 public class UploadController {
 
+    public static final String SEPERATOR = "/";
     // 신규 작성(394p)
     @Value("${org.syc.upload.path}")    // application.yml의 변수
     private String uploadPath;
@@ -133,7 +134,7 @@ public class UploadController {
 
         String str = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
 
-        String folderPath = str.replace("//", File.separator);
+        String folderPath = str.replace(SEPERATOR, File.separator);
 
         // make folder ------------------------------------------------
         File uploadPathFolder = new File(uploadPath, folderPath);
