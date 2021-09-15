@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/MreviewApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/ServletInitializer.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/common/entity/BaseEntity.class" afterDir="false" />
@@ -28,7 +28,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/UploadResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/UploadResultDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" afterDir="false" />
     </list>
@@ -286,42 +285,7 @@
       <workItem from="1631494368112" duration="10246000" />
       <workItem from="1631597191161" duration="7903000" />
       <workItem from="1631607314649" duration="2830000" />
-      <workItem from="1631614111105" duration="4489000" />
-    </task>
-    <task id="LOCAL-00024" summary="MovieRepository 인터페이스, 영화마다 이미지를 찾는 비효율적인 쿼리 추가 @syc">
-      <created>1631249835887</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1631249835887</updated>
-    </task>
-    <task id="LOCAL-00025" summary="업데이트 @syc">
-      <created>1631249846749</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1631249846749</updated>
-    </task>
-    <task id="LOCAL-00026" summary="MovieRepository 인터페이스, 페이징 처리 JPQL 수정, max()처리 제거 @syc">
-      <created>1631250420731</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1631250420731</updated>
-    </task>
-    <task id="LOCAL-00027" summary="업데이트 @syc">
-      <created>1631250595154</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1631250595154</updated>
-    </task>
-    <task id="LOCAL-00028" summary="업데이트 @syc">
-      <created>1631253990078</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1631253990078</updated>
+      <workItem from="1631614111105" duration="6488000" />
     </task>
     <task id="LOCAL-00029" summary="README.md 수정 @syc">
       <created>1631254023218</created>
@@ -631,7 +595,42 @@
       <option name="project" value="LOCAL" />
       <updated>1631614236092</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="build.gradle, Thumbnailator 라이브러리 추가 @syc">
+      <created>1631620338827</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1631620338827</updated>
+    </task>
+    <task id="LOCAL-00074" summary="UploadController, uploadFile내의 try에 섬네일 생성, 섬네일 파일 이름에 s붙이는 기능 추가 @syc">
+      <created>1631620499070</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1631620499070</updated>
+    </task>
+    <task id="LOCAL-00075" summary="uploadEx.html, function showUploadedImages 기능 추가 @syc">
+      <created>1631620542738</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1631620542738</updated>
+    </task>
+    <task id="LOCAL-00076" summary="UploadResultDTO, getThumbnailURL() 메서드 추가 @syc">
+      <created>1631620583299</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1631620583299</updated>
+    </task>
+    <task id="LOCAL-00077" summary="workspace.xml, 업데이트 @syc">
+      <created>1631620597935</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1631620597935</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,11 +664,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="MovieRepository 인터페이스에 getMovieWithAll()의 JPQL 쿼리문 추가 수정 @syc" />
-    <MESSAGE value="ReviewRepository 인터페이스에서 특정 영화 번호를 이용한 해당 영화를 리뷰한 정보 조회를 위한 메서드 추가 @syc" />
-    <MESSAGE value="ReviewRepositoryTests 클래스에서 Review에서 필요한 데이터를 추출하기 위한 testGetMovieReviews() 추가 @syc" />
-    <MESSAGE value="ReviewRepository 인터페이스에 '@EntityGraph' 추가 @syc" />
-    <MESSAGE value="ReviewRepositoryTests '@Test'추가 및 간단한 수정 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드 추가 @syc" />
     <MESSAGE value="ReviewRepository 인터페이스에 deleteByMember() 메서드, 주석 오타 수정 @syc" />
     <MESSAGE value="MemberRepositoryTests 클래스, 회원 삭제를 위해서 ReviewRepository 연결 후 testDeleteMember() 메서드 정의, 1번 회원 제거 @syc" />
@@ -690,6 +684,11 @@
     <MESSAGE value="UploadController, 오타 수정 @syc" />
     <MESSAGE value="uploadEx.html, uploadBtn의 클릭 기능 구현(자바스크립트)  @syc" />
     <MESSAGE value="업데이트 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="업데이트 @syc" />
+    <MESSAGE value="build.gradle, Thumbnailator 라이브러리 추가 @syc" />
+    <MESSAGE value="UploadController, uploadFile내의 try에 섬네일 생성, 섬네일 파일 이름에 s붙이는 기능 추가 @syc" />
+    <MESSAGE value="uploadEx.html, function showUploadedImages 기능 추가 @syc" />
+    <MESSAGE value="UploadResultDTO, getThumbnailURL() 메서드 추가 @syc" />
+    <MESSAGE value="workspace.xml, 업데이트 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
 </project>
