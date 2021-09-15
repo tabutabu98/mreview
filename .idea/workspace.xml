@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56816f9e-29fd-481b-9b46-e34a3a4fc731.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56816f9e-29fd-481b-9b46-e34a3a4fc731.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +123,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -270,34 +271,7 @@
       <workItem from="1631597191161" duration="7903000" />
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
-    </task>
-    <task id="LOCAL-00047" summary="README.md 수정 @syc">
-      <created>1631263182204</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1631263182204</updated>
-    </task>
-    <task id="LOCAL-00048" summary="업데이트 @syc">
-      <created>1631263278387</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1631263278387</updated>
-    </task>
-    <task id="LOCAL-00049" summary="README.md 수정 @syc">
-      <created>1631263315291</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1631263315291</updated>
-    </task>
-    <task id="LOCAL-00050" summary="업데이트 @syc">
-      <created>1631264191385</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1631264191385</updated>
+      <workItem from="1631696730033" duration="3350000" />
     </task>
     <task id="LOCAL-00051" summary="README.md 수정 @syc">
       <created>1631264209869</created>
@@ -614,7 +588,35 @@
       <option name="project" value="LOCAL" />
       <updated>1631680175988</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="MovieController, @RequiredArgsConstructor 어노테이션 추가, register의 포스트맵핑 추가 @syc">
+      <created>1631683222148</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1631683222148</updated>
+    </task>
+    <task id="LOCAL-00097" summary="MovieService, dto에서 Entity를 Map타입으로 반환하는 로직 추가 @syc">
+      <created>1631683369792</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1631683369792</updated>
+    </task>
+    <task id="LOCAL-00098" summary="MovieServiceImpl, Map타입으로 Movie 객체와 MovieImage 객체의 리스트를 처라하는 로직 추가 @syc">
+      <created>1631683447219</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1631683447219</updated>
+    </task>
+    <task id="LOCAL-00099" summary="workspace.xml, 업데이트 @syc">
+      <created>1631683459743</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1631683459743</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,9 +650,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="UploadResultDTO 클래스 생성 @syc" />
-    <MESSAGE value="UploadController, 수정 및 업로드 이미지 출력하기(ResposeEntity) 추가 @syc" />
-    <MESSAGE value="application.yml, 오타 수정 @syc" />
     <MESSAGE value="UploadController, 오타 수정 @syc" />
     <MESSAGE value="uploadEx.html, uploadBtn의 클릭 기능 구현(자바스크립트)  @syc" />
     <MESSAGE value="업데이트 @syc" />
@@ -672,6 +671,9 @@
     <MESSAGE value="README.md, 업데이트 @syc" />
     <MESSAGE value="MovieService, 인터페이스 생성 @syc" />
     <MESSAGE value="MovieServiceImpl, 클래스 생성 @syc" />
+    <MESSAGE value="MovieController, @RequiredArgsConstructor 어노테이션 추가, register의 포스트맵핑 추가 @syc" />
+    <MESSAGE value="MovieService, dto에서 Entity를 Map타입으로 반환하는 로직 추가 @syc" />
+    <MESSAGE value="MovieServiceImpl, Map타입으로 Movie 객체와 MovieImage 객체의 리스트를 처라하는 로직 추가 @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
