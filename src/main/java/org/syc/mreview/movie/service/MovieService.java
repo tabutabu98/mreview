@@ -17,7 +17,7 @@ public interface MovieService {
     Long register(MovieDTO movieDTO);
 
     // Map타입으로 반환
-    default Map<String, Object> dtoToEntity(MovieDTO movieDTO){
+    default Map<String, Object> dtoToEntity(MovieDTO movieDTO) {
 
         Map<String, Object> entityMap = new HashMap<>();
 
@@ -29,24 +29,21 @@ public interface MovieService {
         entityMap.put("movie", movie);
 
         List<MovieImageDTO> imageDTOList = movieDTO.getImageDTOList();
+        // MovieImage DTO처리
+        if (imageDTOList != null && imageDTOList.size() > 0) {
+            List<MovieImage> movieImageList = imageDTOList.stream()
+                    .map(movieImageDTO -> {
+                        MovieImage movieImage = MovieImage.builder()
+                                .path(movieImageDTO.getPath())
+                                .imgName(movieImageDTO.getImgName())
+                                .uuid(movieImageDTO.getUuid())
+                                .movie(movie)
+                                .build();
 
-        // MovieImageDTO처리
-        if(imageDTOList != null && imageDTOList.size() > 0){
-            List<MovieImage> movieImageList = imageDTOList.stream().map(movieImageDTO -> {
-
-                MovieImage movieImage = MovieImage.builder()
-                        .path(movieImageDTO.getPath())
-                        .imgName(movieImageDTO.getImgName())
-                        .uuid(movieImageDTO.getUuid())
-                        .movie(movie)
-                        .build();
-
-                return movieImage;
-            }).collect(Collectors.toList());
-
+                        return movieImage;
+                    }).collect(Collectors.toList());
             entityMap.put("imgList", movieImageList);
         }
-
         return entityMap;
     }
 
