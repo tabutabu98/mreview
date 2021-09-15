@@ -19,7 +19,7 @@
             </div>
 
             <!-- 이미지 파일 -->
-            <div class="form-group" fileForm>
+            <div class="form-group fileForm">
                 <label>Image Files</label>
                 <div class="custom-file">
                     <input type="file" class="custom-file-input files" id="fileInput" multiple>
@@ -27,14 +27,205 @@
                 </div>
             </div>
 
+            <!-- 히든타입의 인풋 태그들로 데이터가 들어오는지 확인하는 영역 -->
             <div class="box">
 
+            </div>
+
+            <!-- 신규 작성(427p), 섬네일 이미지 출력 영역에 쓰일 스타일태그 -->
+            <style>
+                .uploadResult{
+                    width: 100%;
+                    background-color: gray;
+                    margin-top: 10px;
+                }
+
+                .uploadResult ul{
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: center;
+                    align-items: center;
+                    vertical-align: top;
+                    overflow: auto;
+                }
+
+                .uploadResult ul li{
+                    list-style: none;
+                    padding: 10px;
+                    margin-left: 2em;
+                }
+
+                .uploadResult ul li img{
+                    width: 100px;
+                }
+            </style>
+
+            <!-- 선택된 이미지 출력 영역 -->
+            <div class="uploadResult">
+                <ul>
+
+                </ul>
             </div>
 
             <!-- 전송버튼 -->
             <button type="submit" class="btn btn-primary">Submit</button>
 
         </form>
+
+
+        <!-- 신규 작성(425p) -->
+        <!-- 자바스크립트 -->
+        <script>
+
+            $(document).ready(function(e) {
+
+                var regex = new RegExp("(.*?)\.(exe|sh|zip|alz|tiff)$");
+                var maxSize = 10485760; // 10MB
+
+                function checkExtension(fileName, fileSize){
+
+                    // 파일사이즈가 기준보다 클때
+                    if (fileSize >= maxSize){
+                        alert("파일 사이즈 초과");
+                        return false;
+                    }
+
+                    // 파일 종류 판별
+                    if (regex.test(fileName)){
+                        alert("해당 종류의 파일은 업로드할 수 없습니다.");
+                        return false;
+                    }
+
+                    return true;
+                }
+
+                $(".custom-file-input").on("change", function (){
+
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+
+                    var formData = new FormData();
+
+                    var inputFile = $(this);
+
+                    var files = inputFile[0].files;
+
+                    var appended = false;
+
+                    for (var i = 0; i < files.length; i++) {
+
+                        if (!checkExtension(files[i].name, files[i].size)){
+                            return false;
+                        }
+
+                        console.log(files[i]); // 올라오고
+                        formData.append("uploadFiles", files[i]);
+                        appended = true;
+                    }
+
+                    // upload를 하지 않는다.
+                    if (!appended) {return;}
+
+                    for (var value of formData.values()){
+                        console.log(value); // 두번째는 여기 걸리고
+                    }
+
+                    // 실제 업로드 부분
+                    // upload ajax
+                    $.ajax({
+                        url: '/uploadAjax',
+                        processData: false,
+                        contentType: false,
+                        data: formData,
+                        type: 'POST',
+                        dataType: 'json',
+                        success: function (result){
+                            console.log(result);
+
+                            showResult(result);
+                        },
+                        error: function (jqXHR, textStatus, errorThrown){
+                            console.log(textStatus);    // 에러가 여기서 걸림
+                        }
+                    })  // ajax의 끝
+
+                });  // change Event의 끝
+
+
+                // 신규 작성(428p), showResult()
+                function showResult(uploadResultArr){
+
+                    var uploadUL = $(".uploadResult ul");
+
+                    var str = "";
+
+                    $(uploadResultArr).each(function (i, obj) {
+
+                        str += "<li data-name='" + obj.fileName + "' data-path='" + obj.folderPath + "' data-uuid='" + obj.uuid + "'>";
+                        str + " <div>";
+                        str += "<button type='button' data-file=\'" + obj.imageURL + "\' "
+                        str += "class='btn-warning btn-sm'>X</button><br>";
+                        str += "<img src='/display?fileName=" + obj.thumbnailURL + "'>";
+                        str += "</div>";
+                        str + "</li>";
+
+                    });
+
+                    uploadUL.append(str);
+
+                }
+
+                // 신규 작성(429p), 이미지 파일의 삭제와 submit 처리
+                $(".uploadResult").on("click", "li button", function (e){
+
+                    console.log("delete file");
+
+                    var targetFile = $(this).data("file");
+
+                    var targetLi = $(this).closest("li");
+
+                    $.ajax({
+                        url: '/removeFile',
+                        data: {fileName: targetFile},
+                        dataType: 'text',
+                        type: 'POST',
+                        success: function (result){
+                            alert(result);
+                            targetLi.remove();
+                        }
+                    }); // ajax의 끝
+
+                });
+
+                // 신규 작성(431p), prevent submit
+                $(".btn-primary").on("click", function (e){
+
+                    e.preventDefault();
+
+                    var str = "";
+
+                    $(".uploadResult li").each(function (i, obj){
+
+                        var target = $(obj);
+
+                        str += "<input type='hidden' name='imageDTOList[" + i + "].imgName' value='" + target.data('name') + "'>";
+
+                        str += "<input type='hidden' name='imageDTOList[" + i + "].path' value='" + target.data('path') + "'>";
+
+                        str += "<input type='hidden' name='imageDTOList[" + i + "].uuid' value='" + target.data('uuid') + "'>";
+
+                    });
+
+                    // 태그들이 추가된 것을 확인하기 위한 장치, 확인하고 주석처리
+                    $(".box").html(str);
+
+                    // $("form").submit();
+
+                });
+
+            }); // document ready
+
+        </script>
 
     </th:block>
 
