@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/MreviewApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/ServletInitializer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/common/entity/BaseEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/member/entity/Member$MemberBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/member/entity/Member.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/member/repository/MemberRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/Movie$MovieBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/MovieImage$MovieImageBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/entity/MovieImage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/repository/MovieImageRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/movie/repository/MovieRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/review/entity/Review$ReviewBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/review/entity/Review.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/classes/org/syc/mreview/review/repository/ReviewRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/MreviewApplicationTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/member/repository/MemberRepositoryTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/movie/repository/MovieRepositoryTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/classes/org/syc/mreview/review/repository/ReviewRepositoryTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/UploadResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/UploadResultDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadEx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,12 +233,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.mreview [clean]" />
       <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
       <item itemvalue="JUnit.ReviewRepositoryTests" />
       <item itemvalue="JUnit.ReviewRepositoryTests.testGetMovieReviews" />
       <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
       <item itemvalue="Spring Boot.MreviewApplication" />
-      <item itemvalue="Gradle.mreview [clean]" />
     </list>
     <recent_temporary>
       <list>
