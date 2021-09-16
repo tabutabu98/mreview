@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="업데이트 @syc">
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/PageRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/PageResultDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/dto/MovieDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/dto/MovieDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/repository/MovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -131,11 +131,11 @@
       <recent name="org.syc.mreview.movie.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\java\org\syc\mreview\common\dto" />
       <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources" />
       <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources\templates" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\test\java\org\syc" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\main\java\org\syc\mreview" />
-      <recent name="C:\Users\SongYeChan\Desktop\mreview\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.syc.mreview.common.entity" />
@@ -272,35 +272,7 @@
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
       <workItem from="1631696730033" duration="3350000" />
-      <workItem from="1631752526104" duration="1449000" />
-    </task>
-    <task id="LOCAL-00051" summary="README.md 수정 @syc">
-      <created>1631264209869</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1631264209869</updated>
-    </task>
-    <task id="LOCAL-00052" summary="pictures 업데이트 @syc">
-      <created>1631264457753</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1631264457753</updated>
-    </task>
-    <task id="LOCAL-00053" summary="업데이트 @syc">
-      <created>1631264468533</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1631264468533</updated>
-    </task>
-    <task id="LOCAL-00054" summary="yml, 파일 업로드를 위한 설정 추가 @syc">
-      <created>1631265613256</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1631265613257</updated>
+      <workItem from="1631752526104" duration="2791000" />
     </task>
     <task id="LOCAL-00055" summary="UploadController 클래스 생성 @syc">
       <created>1631265648446</created>
@@ -617,7 +589,35 @@
       <option name="project" value="LOCAL" />
       <updated>1631683459743</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="MovieDTO, 영화의 편균 평점, 리뷰  수 jpa의 count, 생성일, 수정일 추가 @syc">
+      <created>1631754066380</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1631754066380</updated>
+    </task>
+    <task id="LOCAL-00101" summary="MovieRepository, 단순 수정 @syc">
+      <created>1631754101276</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1631754101276</updated>
+    </task>
+    <task id="LOCAL-00102" summary="register.html, box에 태그들이 들어가는걸 확인 후 주석처리, submit 기능on @syc">
+      <created>1631754158625</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1631754158625</updated>
+    </task>
+    <task id="LOCAL-00103" summary="workspace.xml, 업데이트 @syc">
+      <created>1631754194638</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1631754194638</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,9 +651,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="UploadController, 오타 수정 @syc" />
-    <MESSAGE value="uploadEx.html, uploadBtn의 클릭 기능 구현(자바스크립트)  @syc" />
-    <MESSAGE value="업데이트 @syc" />
     <MESSAGE value="build.gradle, Thumbnailator 라이브러리 추가 @syc" />
     <MESSAGE value="UploadController, uploadFile내의 try에 섬네일 생성, 섬네일 파일 이름에 s붙이는 기능 추가 @syc" />
     <MESSAGE value="uploadEx.html, function showUploadedImages 기능 추가 @syc" />
@@ -675,6 +672,9 @@
     <MESSAGE value="MovieController, @RequiredArgsConstructor 어노테이션 추가, register의 포스트맵핑 추가 @syc" />
     <MESSAGE value="MovieService, dto에서 Entity를 Map타입으로 반환하는 로직 추가 @syc" />
     <MESSAGE value="MovieServiceImpl, Map타입으로 Movie 객체와 MovieImage 객체의 리스트를 처라하는 로직 추가 @syc" />
+    <MESSAGE value="MovieDTO, 영화의 편균 평점, 리뷰  수 jpa의 count, 생성일, 수정일 추가 @syc" />
+    <MESSAGE value="MovieRepository, 단순 수정 @syc" />
+    <MESSAGE value="register.html, box에 태그들이 들어가는걸 확인 후 주석처리, submit 기능on @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
