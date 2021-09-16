@@ -22,7 +22,11 @@ public interface MovieService {
     // 목록 처리를 위한 getList
     PageResultDTO<MovieDTO, Object[]> getList(PageRequestDTO requestDTO);
 
+    // 신규 작성(443p)
+    MovieDTO getMovie(Long mno);
+
     default MovieDTO entitiesToDTO(Movie movie, List<MovieImage> movieImages, Double avg, Long reviewCnt) {
+        // Movie
         MovieDTO movieDTO = MovieDTO.builder()
                 .mno(movie.getMno())
                 .title(movie.getTitle())
@@ -30,6 +34,7 @@ public interface MovieService {
                 .modDate(movie.getModDate())
                 .build();
 
+        // MovieImage
         List<MovieImageDTO> movieImageDTOList = movieImages.stream().map(movieImage -> {
             return MovieImageDTO.builder()
                     .imgName(movieImage.getImgName())
