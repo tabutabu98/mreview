@@ -1,5 +1,7 @@
 package org.syc.mreview.movie.service;
 
+import org.syc.mreview.common.dto.PageRequestDTO;
+import org.syc.mreview.common.dto.PageResultDTO;
 import org.syc.mreview.movie.dto.MovieDTO;
 import org.syc.mreview.movie.dto.MovieImageDTO;
 import org.syc.mreview.movie.entity.Movie;
@@ -14,7 +16,34 @@ import java.util.stream.Collectors;
 // 추가 수정(421p)
 public interface MovieService {
 
+    // 신규 작성(436p)
     Long register(MovieDTO movieDTO);
+
+    // 목록 처리를 위한 getList
+    PageResultDTO<MovieDTO, Object[]> getList(PageRequestDTO requestDTO);
+
+    default MovieDTO entitiesToDTO(Movie movie, List<MovieImage> movieImages, Double avg, Long reviewCnt) {
+        MovieDTO movieDTO = MovieDTO.builder()
+                .mno(movie.getMno())
+                .title(movie.getTitle())
+                .regDate(movie.getRegDate())
+                .modDate(movie.getModDate())
+                .build();
+
+        List<MovieImageDTO> movieImageDTOList = movieImages.stream().map(movieImage -> {
+            return MovieImageDTO.builder()
+                    .path(movieImage.getPath())
+                    .uuid(movieImage.getUuid())
+                    .build();
+        }).collect(Collectors.toList());
+
+        movieDTO.setImageDTOList(movieImageDTOList);
+        movieDTO.setAvg(avg);
+        movieDTO.setReviewCnt(reviewCnt.intValue());
+
+        return movieDTO;
+    }
+    // 신규 작성 끝(437p)
 
     // Map타입으로 반환
     default Map<String, Object> dtoToEntity(MovieDTO movieDTO) {
