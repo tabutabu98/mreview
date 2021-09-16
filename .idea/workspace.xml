@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/PageRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/PageResultDTO.java" afterDir="false" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="MovieService, 추가 수정 @syc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/controller/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/dto/ReviewDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/service/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/service/ReviewServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/read.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/entity/Review.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +171,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MemberRepositoryTests.insertMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mreview.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.syc.mreview.member.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.syc.mreview.member.repository" />
+      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.member.repository.MemberRepositoryTests" />
+      <option name="METHOD_NAME" value="insertMembers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MemberRepositoryTests.testDeleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
@@ -180,7 +203,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieRepositoryTests.testGetMovieWithAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieRepositoryTests.insertMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
         <pattern>
@@ -190,13 +213,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.syc.mreview.movie.repository" />
       <option name="MAIN_CLASS_NAME" value="org.syc.mreview.movie.repository.MovieRepositoryTests" />
-      <option name="METHOD_NAME" value="testGetMovieWithAll" />
+      <option name="METHOD_NAME" value="insertMovies" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewRepositoryTests.insertMovieReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mreview.test" />
       <extension name="coverage">
         <pattern>
@@ -206,22 +229,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.syc.mreview.review.repository" />
       <option name="MAIN_CLASS_NAME" value="org.syc.mreview.review.repository.ReviewRepositoryTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewRepositoryTests.testGetMovieReviews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mreview.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.syc.mreview.review.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.syc.mreview.review.repository" />
-      <option name="MAIN_CLASS_NAME" value="org.syc.mreview.review.repository.ReviewRepositoryTests" />
-      <option name="METHOD_NAME" value="testGetMovieReviews" />
+      <option name="METHOD_NAME" value="insertMovieReviews" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,19 +248,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.mreview [clean]" />
-      <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
-      <item itemvalue="JUnit.ReviewRepositoryTests" />
-      <item itemvalue="JUnit.ReviewRepositoryTests.testGetMovieReviews" />
       <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
       <item itemvalue="Spring Boot.MreviewApplication" />
+      <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
+      <item itemvalue="JUnit.MovieRepositoryTests.insertMovies" />
+      <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
+        <item itemvalue="JUnit.MovieRepositoryTests.insertMovies" />
+        <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
         <item itemvalue="Gradle.mreview [clean]" />
         <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
-        <item itemvalue="JUnit.ReviewRepositoryTests.testGetMovieReviews" />
-        <item itemvalue="JUnit.ReviewRepositoryTests" />
-        <item itemvalue="JUnit.MovieRepositoryTests.testGetMovieWithAll" />
       </list>
     </recent_temporary>
   </component>
@@ -272,49 +280,7 @@
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
       <workItem from="1631696730033" duration="3350000" />
-      <workItem from="1631752526104" duration="2791000" />
-    </task>
-    <task id="LOCAL-00055" summary="UploadController 클래스 생성 @syc">
-      <created>1631265648446</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1631265648446</updated>
-    </task>
-    <task id="LOCAL-00056" summary="업데이트 @syc">
-      <created>1631265928970</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1631265928970</updated>
-    </task>
-    <task id="LOCAL-00057" summary="README.md 수정 @syc">
-      <created>1631265941762</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1631265941762</updated>
-    </task>
-    <task id="LOCAL-00058" summary="application.yml, 업로드된 파일의 저장 추가 @syc">
-      <created>1631496770379</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1631496770379</updated>
-    </task>
-    <task id="LOCAL-00059" summary="UploadController, application.yml의 Path 값 추가 @syc">
-      <created>1631496909739</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1631496909739</updated>
-    </task>
-    <task id="LOCAL-00060" summary="UploadTestController, 신규 생성 @syc">
-      <created>1631496946874</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1631496946874</updated>
+      <workItem from="1631752526104" duration="13785000" />
     </task>
     <task id="LOCAL-00061" summary="uploadEx.html, 신규 생성 @syc">
       <created>1631496975722</created>
@@ -617,7 +583,49 @@
       <option name="project" value="LOCAL" />
       <updated>1631754194638</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="PageRequestDTO, 추가 @syc">
+      <created>1631755933285</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1631755933285</updated>
+    </task>
+    <task id="LOCAL-00105" summary="PageResultDTO, 추가 @syc">
+      <created>1631755948481</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1631755948481</updated>
+    </task>
+    <task id="LOCAL-00106" summary="MovieService, 목록 처리를 위한 getList 추가 @syc">
+      <created>1631755979269</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1631755979269</updated>
+    </task>
+    <task id="LOCAL-00107" summary="MovieServiceImpl, getList 구현 로직 추가 @syc">
+      <created>1631756010597</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1631756010597</updated>
+    </task>
+    <task id="LOCAL-00108" summary="workspace.xml, 업데이트 @syc">
+      <created>1631756027283</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1631756027283</updated>
+    </task>
+    <task id="LOCAL-00109" summary="MovieService, 추가 수정 @syc">
+      <created>1631757781023</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1631757781023</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,11 +659,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="build.gradle, Thumbnailator 라이브러리 추가 @syc" />
-    <MESSAGE value="UploadController, uploadFile내의 try에 섬네일 생성, 섬네일 파일 이름에 s붙이는 기능 추가 @syc" />
-    <MESSAGE value="uploadEx.html, function showUploadedImages 기능 추가 @syc" />
-    <MESSAGE value="UploadResultDTO, getThumbnailURL() 메서드 추가 @syc" />
-    <MESSAGE value="application.yml, 파일 하나의 최대 크기 수정 @syc" />
     <MESSAGE value="UploadController, &quot;/&quot; -&gt; SEPERATOR 로 정의 @syc" />
     <MESSAGE value="uploadEx.html, ajax에서 dataType: 'json'으로 오타 수정 @syc" />
     <MESSAGE value="UploadController, 업로드 파일 삭제 맵핑 추가 @syc" />
@@ -675,7 +678,23 @@
     <MESSAGE value="MovieDTO, 영화의 편균 평점, 리뷰  수 jpa의 count, 생성일, 수정일 추가 @syc" />
     <MESSAGE value="MovieRepository, 단순 수정 @syc" />
     <MESSAGE value="register.html, box에 태그들이 들어가는걸 확인 후 주석처리, submit 기능on @syc" />
+    <MESSAGE value="PageRequestDTO, 추가 @syc" />
+    <MESSAGE value="PageResultDTO, 추가 @syc" />
+    <MESSAGE value="MovieService, 목록 처리를 위한 getList 추가 @syc" />
+    <MESSAGE value="MovieServiceImpl, getList 구현 로직 추가 @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
+    <MESSAGE value="MovieService, 추가 수정 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="MovieService, 추가 수정 @syc" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/PageResultDTO.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
