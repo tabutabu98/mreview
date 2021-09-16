@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<!-- 신규 작성(439p) -->
+<th:block th:replace="~{/layout/basic :: setContent(~{this::content})}">
+
+    <th:block th:fragment="content">
+
+        <h1 class="mt-4">Movie List Page
+
+            <!-- 리스트 페이지의 REGISTER(등록)버튼 -->
+            <span>
+                <a th:href="@{/movie/register}">
+                    <button type="button" class="btn btn-outline-primary">
+                        REGISTER
+                    </button>
+                </a>
+            </span>
+
+        </h1>
+
+        <!-- for 태그 -->
+        <form action="/movie/list" method="get" id="searchForm">
+            <input type="hidden"  name="page" value="1">
+        </form>
+
+        <!-- 게시판 테이블 -->
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Picture</th>
+                <th scope="col">Review Count</th>
+                <th scope="col">Avg Rating</th>
+                <th scope="col">Regdate</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <!-- 신규 작성(440p), 리스트 페이지 가져오기 -->
+            <tr th:each="dto : ${result.dtoList}">
+                <!-- 영화 번호 -->
+                <th scope="row">
+                    <!-- read.html로 들어갈 수 있도록 a태그 작성 -->
+                    <a th:href="@{/movie/read(mno = ${dto.mno}, page= ${result.page})}">
+                        [[${dto.mno}]]
+                    </a>
+                </th>
+                <!-- 섬네일 -->
+                <td><img th:if="${dto.imageDTOList.size() > 0 && dto.imageDTOList[0].path != null}"
+                         th:src="|/display?fileName=${dto.imageDTOList[0].getThumbnailURL()|}">[[${dto.title}]] </td>
+                <!-- 리뷰 -->
+                <td><b>[[${dto.reviewCnt}]]</b></td>
+                <!-- 평점 -->
+                <td><b>[[${dto.avg}]]</b></td>
+                <!-- 생성일 -->
+                <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <!-- 페이징 처리 영역 -->
+        <ul class="pagination h-100 justify-content-center align-items-center">
+
+            <li class="page-item " th:if="${result.prev}">
+                <a class="page-link" th:href="@{/movie/list(page= ${result.start -1})}" tabindex="-1">Previous</a>
+            </li>
+
+            <li th:class=" 'page-item ' + ${result.page == page?'active':''} " th:each="page: ${result.pageList}">
+                <a class="page-link" th:href="@{/movie/list(page = ${page})}">
+                    [[${page}]]
+                </a>
+            </li>
+
+            <li class="page-item" th:if="${result.next}">
+                <a class="page-link" th:href="@{/movie/list(page= ${result.end + 1} )}">Next</a>
+            </li>
+        </ul>
+
+        <!-- 자바스크립트 -->
+        <script th:inline="javascript">
+
+        </script>
+
+    </th:block>
+
+</th:block>
+</html>
