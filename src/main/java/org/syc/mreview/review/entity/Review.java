@@ -30,4 +30,16 @@ public class Review extends BaseEntity {
 
     private String text;    // 리뷰 내용
 
+
+    // 신규 작성(450p), 리뷰 평점과 리뷰 내용을 수정할 수 있도록 처리하기 위해 추가
+    // 이 두 메서드의 기능을 서비스하기 위해서는 ReviewService와 ReviewServiceImpl에 코드를 추가해줘야함
+    // changeGrade() 메서드 추가
+    public void changeGrade(int grade){
+        this.grade = grade;
+    }
+
+    // changeText() 메서드
+    public void changeText(String text){
+        this.text = text;
+    }
 }
