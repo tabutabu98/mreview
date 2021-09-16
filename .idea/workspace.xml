@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="MovieService, 추가 수정 @syc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/controller/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/dto/ReviewDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/service/ReviewServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/read.html" afterDir="false" />
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/review/entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/read.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,84 +271,7 @@
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
       <workItem from="1631696730033" duration="3350000" />
-      <workItem from="1631752526104" duration="13785000" />
-    </task>
-    <task id="LOCAL-00061" summary="uploadEx.html, 신규 생성 @syc">
-      <created>1631496975722</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1631496975722</updated>
-    </task>
-    <task id="LOCAL-00062" summary="업데이트 @syc">
-      <created>1631496995071</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1631496995071</updated>
-    </task>
-    <task id="LOCAL-00063" summary="UploadController, 메인 메소드 추가 수정, makeFolder() 메소드 추가 @syc">
-      <created>1631500096739</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1631500096739</updated>
-    </task>
-    <task id="LOCAL-00064" summary="UploadResultDTO 클래스 생성 @syc">
-      <created>1631500449734</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1631500449734</updated>
-    </task>
-    <task id="LOCAL-00065" summary="업데이트 @syc">
-      <created>1631500459079</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1631500459079</updated>
-    </task>
-    <task id="LOCAL-00066" summary="UploadController, 수정 및 업로드 이미지 출력하기(ResposeEntity) 추가 @syc">
-      <created>1631502067563</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1631502067563</updated>
-    </task>
-    <task id="LOCAL-00067" summary="업데이트 @syc">
-      <created>1631502075946</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1631502075946</updated>
-    </task>
-    <task id="LOCAL-00068" summary="업데이트 @syc">
-      <created>1631504764155</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1631504764155</updated>
-    </task>
-    <task id="LOCAL-00069" summary="application.yml, 오타 수정 @syc">
-      <created>1631614145476</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1631614145476</updated>
-    </task>
-    <task id="LOCAL-00070" summary="UploadController, 오타 수정 @syc">
-      <created>1631614167371</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1631614167371</updated>
-    </task>
-    <task id="LOCAL-00071" summary="uploadEx.html, uploadBtn의 클릭 기능 구현(자바스크립트)  @syc">
-      <created>1631614225907</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1631614225907</updated>
+      <workItem from="1631752526104" duration="16398000" />
     </task>
     <task id="LOCAL-00072" summary="업데이트 @syc">
       <created>1631614236092</created>
@@ -625,7 +539,84 @@
       <option name="project" value="LOCAL" />
       <updated>1631757781023</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="list.html, 신규 생성 @syc">
+      <created>1631770340503</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770340503</updated>
+    </task>
+    <task id="LOCAL-00111" summary="MovieController, list, read, modify 겟맵핑 추가 @syc">
+      <created>1631770381206</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770381207</updated>
+    </task>
+    <task id="LOCAL-00112" summary="MovieService, getMovie 추가 @syc">
+      <created>1631770408745</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770408745</updated>
+    </task>
+    <task id="LOCAL-00113" summary="MovieServiceImpl, getMovie 추가 @syc">
+      <created>1631770430278</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770430278</updated>
+    </task>
+    <task id="LOCAL-00114" summary="read.html, 신규 생성 @syc">
+      <created>1631770449844</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770449844</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Review, changeGrade, changeText 메서드 추가 @syc">
+      <created>1631770510285</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770510285</updated>
+    </task>
+    <task id="LOCAL-00116" summary="ReviewController, 신규 생성 @syc">
+      <created>1631770523573</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770523573</updated>
+    </task>
+    <task id="LOCAL-00117" summary="ReviewDTO, 신규 생성 @syc">
+      <created>1631770538266</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770538266</updated>
+    </task>
+    <task id="LOCAL-00118" summary="ReviewService, 신규 생성 @syc">
+      <created>1631770558784</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770558785</updated>
+    </task>
+    <task id="LOCAL-00119" summary="ReviewServiceImpl, 신규 생성 @syc">
+      <created>1631770571922</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770571922</updated>
+    </task>
+    <task id="LOCAL-00120" summary="workspace.xml, 업데이트 @syc">
+      <created>1631770587185</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1631770587185</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,16 +650,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="UploadController, &quot;/&quot; -&gt; SEPERATOR 로 정의 @syc" />
-    <MESSAGE value="uploadEx.html, ajax에서 dataType: 'json'으로 오타 수정 @syc" />
-    <MESSAGE value="UploadController, 업로드 파일 삭제 맵핑 추가 @syc" />
-    <MESSAGE value="uploadEx.html, showUploadedImages 추가 및 수정, uploadResult의 삭제버튼 로직 추가 @syc" />
-    <MESSAGE value="static 파일 추가 @syc" />
-    <MESSAGE value="layout 파일 추가 @syc" />
-    <MESSAGE value="register.html, 신규 생성 @syc" />
-    <MESSAGE value="MovieController, 생성 @syc" />
-    <MESSAGE value="MovieDTO, 생성 @syc" />
-    <MESSAGE value="MovieImageDTO, 생성 @syc" />
     <MESSAGE value="README.md, 업데이트 @syc" />
     <MESSAGE value="MovieService, 인터페이스 생성 @syc" />
     <MESSAGE value="MovieServiceImpl, 클래스 생성 @syc" />
@@ -682,9 +663,19 @@
     <MESSAGE value="PageResultDTO, 추가 @syc" />
     <MESSAGE value="MovieService, 목록 처리를 위한 getList 추가 @syc" />
     <MESSAGE value="MovieServiceImpl, getList 구현 로직 추가 @syc" />
-    <MESSAGE value="workspace.xml, 업데이트 @syc" />
     <MESSAGE value="MovieService, 추가 수정 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="MovieService, 추가 수정 @syc" />
+    <MESSAGE value="list.html, 신규 생성 @syc" />
+    <MESSAGE value="MovieController, list, read, modify 겟맵핑 추가 @syc" />
+    <MESSAGE value="MovieService, getMovie 추가 @syc" />
+    <MESSAGE value="MovieServiceImpl, getMovie 추가 @syc" />
+    <MESSAGE value="read.html, 신규 생성 @syc" />
+    <MESSAGE value="Review, changeGrade, changeText 메서드 추가 @syc" />
+    <MESSAGE value="ReviewController, 신규 생성 @syc" />
+    <MESSAGE value="ReviewDTO, 신규 생성 @syc" />
+    <MESSAGE value="ReviewService, 신규 생성 @syc" />
+    <MESSAGE value="ReviewServiceImpl, 신규 생성 @syc" />
+    <MESSAGE value="workspace.xml, 업데이트 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
