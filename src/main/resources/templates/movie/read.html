@@ -26,19 +26,42 @@
         <!-- 리뷰 평균 점수 -->
         <div class="form-group">
             <!-- 읽기 전용 -->
-            <label>Review Count</label>
+            <label>Avg</label>
             <input type="text" class="form-control" name="title" th:value="${dto.avg}" readonly>
         </div>
 
-        <!-- 아직 생략 -->
+        <!-- 427p 참고 -->
         <style>
+            .uploadResult{
+                width: 100%;
+                background-color: gray;
+                margin-top: 10px;
+            }
 
+            .uploadResult ul{
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                vertical-align: top;
+                overflow: auto;
+            }
+
+            .uploadResult ul li{
+                list-style: none;
+                padding: 10px;
+                margin-left: 2em;
+            }
+
+            .uploadResult ul li img{
+                width: 100px;
+            }
         </style>
 
         <!-- 영화 등록할 때 함께 등록한 영화 이미지의 출력 영역 -->
         <div class="uploadResult">
             <ul>
-                <li th:each="movieImage: ${dto.imageDTOList}">
+                <li th:each="movieImage: ${dto.imageDTOList}" th:data-file="${movieImage.getThumbnailURL()}">
                     <img th:if="${movieImage.path != null}" th:src="|/display?fileName=${movieImage.getThumbnailURL()}|">
                 </li>
             </ul>
@@ -51,9 +74,21 @@
             <span class="badge badge-light">[[${dto.reviewCnt}]]</span>
         </button>
 
+        <!-- 신규 작성(460p), 리뷰 등록 버튼, 리뷰 리스트 -->
+        <!-- 리뷰 등록 버튼 -->
+        <button type="button" class="btn btn-info addReviewBtn">
+            Review Register
+        </button>
+
+        <!-- 리뷰 리스트 -->
+        <div class="list-group reviewList">
+
+        </div>
+
+        <!-- 신규 작성(456p) -->
         <!-- 리뷰 모달창 영역 -->
         <!-- 리뷰 모달 -->
-        <div class="reviewModal" tabindex="-1" role="dialog">
+        <div class="reviewModal modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
 
@@ -93,7 +128,7 @@
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
                         <!-- 세이브 버튼 -->
-                        <button type="button" class="btn btn-primary reviewSaveBtn">Save</button>
+                        <button type="button" class="btn btn-primary reviewSaveBtn">Save changes</button>
 
                         <!-- 수정 버튼 -->
                         <button type="button" class="btn btn-warning modifyBtn">Modify</button>
@@ -135,16 +170,200 @@
             </div>
         </div>
 
+        <!-- 신규 작성(459p) -->
+        <!-- starr 자바 스크립트, css -->
+        <script th:src="@{/starrr.js}"></script>
+        <link th:href="@{/css/starrr.css}" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
         <!-- 자바스크립트 -->
         <script>
 
             $(document).ready(function (e){
 
+                // 신규 작성(459p)
+                var grade = 0;
+                var mno = [[${dto.mno}]];
 
+                $('.starrr').starrr({
+                    rating: grade,
+                    change: function (e, value){
+                        if(value){
+                            console.log(value);
+                            grade = value;
+                        }
+                    }
+                });
 
+                // 미리보기 용
+                // $(".reviewModal").modal("show");
+
+                // 신규 작성(461p)
+                var reviewModal = $(".reviewModal");
+                var inputMid = $('input[name="mid"]');
+                var inputText = $('input[name="text"]');
+
+                // 리뷰 쓰는 버튼
+                $(".addReviewBtn").click(function (){
+
+                    inputMid.val("");
+                    inputText.val("");
+
+                    $(".removeBtn, .modifyBtn").hide();
+                    $(".reviewSaveBtn").show();
+
+                    reviewModal.modal('show');
+                });
+
+                // 신규 작성(462p), 리뷰 세이브 버튼 로직
+                $('.reviewSaveBtn').click(function (){
+
+                    var data = {mno:mno, grade:grade, text:inputText.val(), mid:inputMid.val()};
+
+                    console.log(data);
+
+                    $.ajax({
+                        url: '/reviews/' + mno,
+                        type: "POST",
+                        data: JSON.stringify(data),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "text",
+                        success: function (result){
+
+                            console.log("result: " + result);
+
+                            self.location.reload();
+                        }
+                    })
+
+                    reviewModal.modal('hide');
+                });
+
+                //신규 작성(463p)
+                //페이지가 열리면 바로 리뷰 데이터들을 가져와서 사용한다.
+                function getMovieReviews(){
+
+                    function formatTime(str){
+
+                        var date = new Date(str);
+
+                        return date.getFullYear() + '/' +
+                            (date.getMonth() + 1) + '/' +
+                            date.getDate() + '/' +
+                            date.getHours() + ':' +
+                            date.getMinutes();
+                    }
+
+                    $.getJSON("/reviews/" + mno + "/all", function (arr){
+
+                        var str = "";
+
+                        $.each(arr, function (idx, review){
+
+                            console.log(review);
+
+                            str += '    <div class="card-body" data-reviewnum='+review.reviewnum+' data-mid='+review.mid+'>';
+                            str += '    <h5 class="card-title">'+review.text+' \<<span>' + review.grade+ '</span>\></h5>';
+                            // str += '    <h5 class="card-title">'+review.text+'<span> \<' + review.grade+ '\></span></h5>';
+                            str += '    <h6 class="card-subtitle mb-2 text-muted">'+review.nickname+'</h6>';
+                            str += '    <p class="card-text">'+ formatTime(review.regDate) +'</p>';
+                            str += '    </div>';
+                        });
+
+                        $(".reviewList").html(str);
+                    }); // getJSON의 끝
+                }   // function getMovieReviews()의 끝
+
+                getMovieReviews();
+
+                // 신규 작성(465p)
+                // modify review
+
+                var reviewnum;
+
+                $(".reviewList").on("click", ".card-body", function (){
+
+                    $(".reviewSaveBtn").hide();
+                    $(".removeBtn, .modifyBtn").show();
+
+                    var targetReview = $(this);
+
+                    reviewnum = targetReview.data("reviewnum");
+                    console.log("reviewnum: " + reviewnum);
+                    inputMid.val(targetReview.data("mid"));
+                    inputText.val(targetReview.find('.card-title').clone().children().remove().end().text());
+
+                    var grade = targetReview.find('.card-title span').html();
+                    $(".starrr a:nth-child("+ grade +")").trigger('click');
+
+                    $('.reviewModal').modal('show');
+                });
+
+                // 신규 작성(467p)
+                // 수정 버튼 로직
+                $(".modifyBtn").on("click", function (){
+
+                    var data = {reviewnum: reviewnum, mno:mno, grade:grade, text:inputText.val(), mid: inputMid.val()};
+
+                    console.log(data);
+
+                    $.ajax({
+                        url: '/revies/' + mno + "/" + reviewnum,
+                        type: "PUT",
+                        data: JSON.stringify(data),
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "text",
+                        success: function (result){
+
+                            console.log("result: " + result);
+
+                            self.location.reload();
+
+                        }
+                    })
+                    reviewModal.modal('hide');
+                });
+
+                // 제거 버튼 로직
+                $(".removeBtn").on("click", function (){
+
+                    var data = {reviewnum: reviewnum};
+
+                    console.log(data);
+
+                    $.ajax({
+                        url: '/reviews/' + mno + "/" + reviewnum,
+                        type: "DELETE",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "text",
+                        success: function (result){
+
+                            console.log("result: " + result);
+
+                            self.location.reload();
+
+                        }
+                    })
+
+                    reviewModal.modal('hide');
+                });
+
+                // 추가 작성(470p)
+                $(".uploadResult li").click(function (){
+
+                    var file = $(this).data('file');
+
+                    console.log(file);
+
+                    $('.imageModal .modal-body').html("<img style='width:100%' src='/display?fileName=" + file + "&size=1' >")
+
+                    $(".imageModal").modal("show");
+                });
             });
 
         </script>
+
+
 
     </th:block>
 
