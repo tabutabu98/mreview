@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="workspace.xml, 업데이트 @syc">
+    <list default="true" id="0889a935-a31f-46ca-8656-fb3818d8fdac" name="Changes" comment="starrr 라이브러리 추가 @syc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/syc/mreview/common/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/read.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +121,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -134,6 +138,10 @@
       <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources\templates" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\test\java\org\syc" />
       <recent name="C:\Users\SongYeChan\Desktop\mreview\src\main\java\org\syc\mreview" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources\static" />
+      <recent name="D:\Dev\StudySpace\Study_Springboot\mreview\src\main\resources\static\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.syc.mreview.common.entity" />
@@ -240,10 +248,10 @@
     <list>
       <item itemvalue="Gradle.mreview [clean]" />
       <item itemvalue="JUnit.MemberRepositoryTests.testDeleteMember" />
-      <item itemvalue="Spring Boot.MreviewApplication" />
       <item itemvalue="JUnit.MemberRepositoryTests.insertMembers" />
       <item itemvalue="JUnit.MovieRepositoryTests.insertMovies" />
       <item itemvalue="JUnit.ReviewRepositoryTests.insertMovieReviews" />
+      <item itemvalue="Spring Boot.MreviewApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -271,28 +279,8 @@
       <workItem from="1631607314649" duration="2830000" />
       <workItem from="1631614111105" duration="6488000" />
       <workItem from="1631696730033" duration="3350000" />
-      <workItem from="1631752526104" duration="16398000" />
-    </task>
-    <task id="LOCAL-00072" summary="업데이트 @syc">
-      <created>1631614236092</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1631614236092</updated>
-    </task>
-    <task id="LOCAL-00073" summary="build.gradle, Thumbnailator 라이브러리 추가 @syc">
-      <created>1631620338827</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1631620338827</updated>
-    </task>
-    <task id="LOCAL-00074" summary="UploadController, uploadFile내의 try에 섬네일 생성, 섬네일 파일 이름에 s붙이는 기능 추가 @syc">
-      <created>1631620499070</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1631620499070</updated>
+      <workItem from="1631752526104" duration="22632000" />
+      <workItem from="1631837391328" duration="11781000" />
     </task>
     <task id="LOCAL-00075" summary="uploadEx.html, function showUploadedImages 기능 추가 @syc">
       <created>1631620542738</created>
@@ -616,7 +604,28 @@
       <option name="project" value="LOCAL" />
       <updated>1631770587185</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="read.html, 리뷰 모달창과 이미지 모달창 추가 @syc">
+      <created>1631772536065</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1631772536065</updated>
+    </task>
+    <task id="LOCAL-00122" summary="workspace.xml, 업데이트 @syc">
+      <created>1631772547293</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1631772547293</updated>
+    </task>
+    <task id="LOCAL-00123" summary="starrr 라이브러리 추가 @syc">
+      <created>1631772931668</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1631772931668</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,8 +659,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="README.md, 업데이트 @syc" />
-    <MESSAGE value="MovieService, 인터페이스 생성 @syc" />
     <MESSAGE value="MovieServiceImpl, 클래스 생성 @syc" />
     <MESSAGE value="MovieController, @RequiredArgsConstructor 어노테이션 추가, register의 포스트맵핑 추가 @syc" />
     <MESSAGE value="MovieService, dto에서 Entity를 Map타입으로 반환하는 로직 추가 @syc" />
@@ -674,8 +681,10 @@
     <MESSAGE value="ReviewDTO, 신규 생성 @syc" />
     <MESSAGE value="ReviewService, 신규 생성 @syc" />
     <MESSAGE value="ReviewServiceImpl, 신규 생성 @syc" />
+    <MESSAGE value="read.html, 리뷰 모달창과 이미지 모달창 추가 @syc" />
     <MESSAGE value="workspace.xml, 업데이트 @syc" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml, 업데이트 @syc" />
+    <MESSAGE value="starrr 라이브러리 추가 @syc" />
+    <option name="LAST_COMMIT_MESSAGE" value="starrr 라이브러리 추가 @syc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -684,6 +693,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/syc/mreview/common/dto/PageResultDTO.java</url>
           <line>38</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/controller/MovieController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/syc/mreview/movie/service/MovieServiceImpl.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
